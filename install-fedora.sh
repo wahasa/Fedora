@@ -107,6 +107,6 @@ echo "You can now start Fedora with 'fedora' script next time"
 echo " "
 rm -rf ~/.bash_profile" > $folder/root/.bash_profile
 
-   #rm install-fedora.sh
+   rm install-fedora.sh
    rm audiofix.sh
 bash $bin
