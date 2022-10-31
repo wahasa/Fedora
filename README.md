@@ -27,7 +27,7 @@ pkg update && pkg upgrade
 * Install Fedora
 
 ```
-pkg install wget -y && wget  && chmod +x install-fedora.sh && ./install-fedora.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/install-fedora.sh && chmod +x install-fedora.sh && ./install-fedora.sh
 ```
 
 2. Start Fedora
