@@ -41,17 +41,25 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/mai
 ```
 
 2. Start Fedora
-
 ```
 fedora
 ```
 
 3. Stop Fedora
-
 ```
 exit
 ```
 
+---
+Basic commands Ubuntu
+> dnf update : Update list package.</br>
+> dnf upgrade : Upgrade package.</br>
+> dnf search (pkg) : Search package.</br>
+> dnf install (pkg) : Install package.</br>
+> dnf autoremove (pkg) : Delete package.</br>
+> dnf -h : Help all commands.
+
+---
 </br>
 
 ---
