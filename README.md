@@ -66,7 +66,7 @@ on Fedira, run this command :
 
 * [Install Desktop Xfce]()
 ```
-apt install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
+dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
 ---
