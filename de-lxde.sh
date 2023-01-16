@@ -5,6 +5,7 @@ dnf update
 dnf install sudo -y
 dnf install @lxde-desktop-environment -y
 dnf install tigervnc-server dbus -y
+mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
 
 #Setup the necessary files
 mkdir -p ~/.vnc
@@ -20,7 +21,7 @@ export DISPLAY=:1
 export PULSE_SERVER=127.0.0.1
 rm -rf /run/dbus/dbus.pid
 dbus-daemon --system
-dbus-launch lxde-session" > /usr/local/bin/vncstart
+dbus-launch lxsession" > /usr/local/bin/vncstart
 clear
 chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/vncstart
