@@ -5,14 +5,14 @@
 ---
 ## Fedora on Termux Android
 
----------
+---
 Announcement :
 
-For android 12 in [Termux v0.119.1](https://apkcombo.com/termux/com.termux/) fixed.
+For Android 12 problems in [Termux v0.119.1](https://apkcombo.com/id/termux/com.termux) it has been fixed.
 
----------
+---
 • Install Apps on Android
-- [x] [Termux](https://github.com/termux/termux-app/releases)
+- [x] [Termux](https://apkcombo.com/id/termux/com.termux)
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ## Installation
@@ -22,12 +22,22 @@ Copy and paste this command to Termux :
 ```
 pkg update && pkg upgrade
 ```
-
-1. Fedora 36.1.5
-* Install Fedora
-
+* Fedora 38.0 (Container)
+(Arm64/Amd64)
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/install-fedora.sh && chmod +x install-fedora.sh && ./install-fedora.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora38.0.0.sh && chmod +x fedora38.0.0.sh && ./fedora38.0.0.sh
+```
+
+* Fedora 37.0 (Container)
+(Arm64/Amd64)
+```
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora37.0.0.sh && chmod +x fedora37.0.0.sh && ./fedora37.0.0.sh
+```
+
+* Fedora 36.1.5 (Container)
+(Armhf/Arm64/Amd64)
+```
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora36.1.5.sh && chmod +x fedora36.1.5.sh && ./fedora36.1.5.sh
 ```
 
 2. Start Fedora
