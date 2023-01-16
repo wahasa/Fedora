@@ -58,8 +58,50 @@ Basic commands Ubuntu
 > dnf install (pkg) : Install package.</br>
 > dnf autoremove (pkg) : Delete package.</br>
 > dnf -h : Help all commands.
+---
+## [Desktop Environment]()
+
+on Ubuntu, run this command :
+> apt update && apt upgrade
+
+* [Install Desktop Xfce]()
+```
+apt install wget -y && wget  && chmod +x  && ./
+```
 
 ---
+## VNC Viewer
+
+1. Start VNC Server
+
+on Fedora, run this command to start :
+```
+vnc-start
+```
+
+2. Open Vnc Viewer
+
+Add (+) VNC Client to connect, fill with :
+
+Address
+```
+localhost:1
+```
+
+Name
+```
+Fedora Desktop
+```
+
+To disconnect VNC Client, click (X) on the right.
+
+3. Stop VNC Server
+
+on Fedora, run this command to stop :
+```
+vnc-stop
+```
+
 </br>
 
 ---
