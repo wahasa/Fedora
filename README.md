@@ -22,19 +22,19 @@ Copy and paste this command to Termux :
 
 1. Install Fedora
 
-* Fedora 38.0 (Container)
+* Fedora 38.0 (Container)</br>
 (Arm64/Amd64)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora38.0.0.sh && chmod +x fedora38.0.0.sh && ./fedora38.0.0.sh
 ```
 
-* Fedora 37.0 (Container)
+* Fedora 37.0 (Container)</br>
 (Arm64/Amd64)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora37.0.0.sh && chmod +x fedora37.0.0.sh && ./fedora37.0.0.sh
 ```
 
-* Fedora 36.1.5 (Container)
+* Fedora 36.1.5 (Container)</br>
 (Armhf/Arm64/Amd64)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora36.1.5.sh && chmod +x fedora36.1.5.sh && ./fedora36.1.5.sh
@@ -50,8 +50,8 @@ fedora
 
 ```
 exit
-
 ```
+
 </br>
 
 ---
