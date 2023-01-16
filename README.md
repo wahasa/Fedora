@@ -20,6 +20,8 @@ For Android 12 problems in [Termux v0.119.1](https://apkcombo.com/id/termux/com.
 Copy and paste this command to Termux :
 > pkg update && pkg upgrade
 
+1. Install Fedora
+
 * Fedora 38.0 (Container)
 (Arm64/Amd64)
 ```
