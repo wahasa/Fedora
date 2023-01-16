@@ -61,12 +61,12 @@ Basic commands Ubuntu
 ---
 ## [Desktop Environment]()
 
-on Ubuntu, run this command :
+on Fedira, run this command :
 > apt update && apt upgrade
 
 * [Install Desktop Xfce]()
 ```
-apt install wget -y && wget  && chmod +x  && ./
+apt install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
 ---
