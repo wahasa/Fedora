@@ -2,9 +2,9 @@
 
 #Get the necessary components
 dnf update
-dnf install nano sudo -y
+dnf install sudo -y
 dnf install @xfce-desktop-environment -y
-dnf install tigervnc dbus -y
+dnf install tigervnc-server dbus -y
 
 #Get the extra components
 dnf install xfburn parole mousepad ristretto -y
