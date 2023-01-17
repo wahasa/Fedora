@@ -69,6 +69,11 @@ on Fedira, run this command :
 dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
+* [Install Desktop Xlde]()
+```
+dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
+```
+
 ---
 ## VNC Viewer
 
