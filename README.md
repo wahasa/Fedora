@@ -22,19 +22,19 @@ Copy and paste this command to Termux :
 
 1. Install Fedora
 
-* Fedora 38.0 (Container)</br>
+* [Fedora 38.0 (Container)](https://youtu.be/pKn6qZr1Y90)</br>
 (Arm64/Amd64)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora38.0.0.sh && chmod +x fedora38.0.0.sh && ./fedora38.0.0.sh
 ```
 
-* Fedora 37.0 (Container)</br>
+* [Fedora 37.0 (Container)](https://youtu.be/P6ca5xCksXo)</br>
 (Arm64/Amd64)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora37.0.0.sh && chmod +x fedora37.0.0.sh && ./fedora37.0.0.sh
 ```
 
-* Fedora 36.1.5 (Container)</br>
+* [Fedora 36.1.5 (Container)](https://youtu.be/DkKFfDYuEq4)</br>
 (Armhf/Arm64/Amd64)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Fedora/fedora36.1.5.sh && chmod +x fedora36.1.5.sh && ./fedora36.1.5.sh
@@ -59,19 +59,24 @@ Basic commands Ubuntu
 > dnf autoremove (pkg) : Delete package.</br>
 > dnf -h : Help all commands.
 ---
-## [Desktop Environment]()
+## Desktop Environment
 
 on Fedira, run this command :
 > apt update && apt upgrade
 
-* [Install Desktop Xfce]()
+* [Install Desktop Xfce](https://youtu.be/ON_lcUEs5VY)
 ```
 dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-xfce.sh && chmod +x de-xfce.sh && ./de-xfce.sh
 ```
 
-* [Install Desktop Xlde]()
+* [Install Desktop Xlde](https://youtu.be/YGEv8ZMGXMk)
 ```
 dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
+```
+
+* [Install Desktop Xlqt]()
+```
+dnf install wget -y && wget  && chmod +x  && ./
 ```
 
 ---
