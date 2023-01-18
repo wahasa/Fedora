@@ -61,7 +61,7 @@ Basic commands Fedora
 ---
 ## Desktop Environment
 
-on Fedira, run this command :
+on Fedora, run this command :
 > apt update && apt upgrade
 
 * [Install Desktop Xfce](https://youtu.be/ON_lcUEs5VY)
@@ -76,7 +76,7 @@ dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main
 
 * [Install Desktop Xlqt]()
 ```
-dnf install wget -y && wget  && chmod +x  && ./
+dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-lxqt.sh && chmod +x de-lxqt.sh && ./de-lxqt.sh
 ```
 
 ---
