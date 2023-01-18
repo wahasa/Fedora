@@ -51,7 +51,7 @@ exit
 ```
 
 ---
-Basic commands Ubuntu
+Basic commands Fedora
 > dnf update : Update list package.</br>
 > dnf upgrade : Upgrade package.</br>
 > dnf search (pkg) : Search package.</br>
