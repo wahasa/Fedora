@@ -74,12 +74,12 @@ dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main
 dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-lxde.sh && chmod +x de-lxde.sh && ./de-lxde.sh
 ```
 
-* [Install Desktop Xlqt]()
+* [Install Desktop Xlqt](https://youtu.be/SAhah3LvjrU)
 ```
 dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-lxqt.sh && chmod +x de-lxqt.sh && ./de-lxqt.sh
 ```
 
-* [Install Desktop Kde]()
+* [Install Desktop Kde](https://youtu.be/JEJy47ENcbI)
 ```
 dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main/de-kde.sh && chmod +x de-kde.sh && ./de-kde.sh
 ```
