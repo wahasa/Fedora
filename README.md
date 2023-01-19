@@ -86,7 +86,7 @@ dnf install wget -y && wget https://raw.githubusercontent.com/wahasa/fedora/main
 ---
 Note :
 - [x] Sound fix
-- [x] Browser fix [Click here,.]
+- [x] Browser fix [Click here,.](https://github.com/wahasa/fedora/issues/1#issuecomment-1396447589)
 
 Visit problems now in : [Issues](https://github.com/wahasa/fedora/issues)
 
