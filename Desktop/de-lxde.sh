@@ -19,7 +19,7 @@ echo "#!/bin/sh
 export DISPLAY=:1
 export PULSE_SERVER=127.0.0.1
 rm -rf /run/dbus/dbus.pid
-dbus-launch lxsession" > /usr/local/bin/vncstart
+dbus-launch startlxde" > /usr/local/bin/vncstart
 chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/*
    clear
