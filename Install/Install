@@ -51,9 +51,6 @@ wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora37.sh ; 
         "Fedora36")
 wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; bash fedora36.sh
 	;;
-        "Fedora35")
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora35.sh ; chmod +x fedora35.sh ; bash fedora35.sh
-        ;;
         *)
 	bash Install
         ;;
