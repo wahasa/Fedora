@@ -21,7 +21,7 @@ echo "#!/bin/sh
 export DISPLAY=:1
 export PULSE_SERVER=127.0.0.1
 rm -rf /run/dbus/dbus.pid
-dbus-launch xfce4-session" > /usr/local/bin/vncstart
+dbus-launch startxfce4" > /usr/local/bin/vncstart
 chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/*
    clear
