@@ -3,7 +3,7 @@ List Applications
 <details>
 <summary><code><b>Firefox Browser</b></code></summary>
 
-  ![Screenshot_2022-10-24-07-29-03-061_com realvnc viewer android](https://user-images.githubusercontent.com/69626847/197427471-82a41286-3584-41e4-95f6-5e3373d25654.png)
+![firefox](https://github.com/wahasa/Fedora/assets/69626847/4dbf40e5-1ec8-405f-b095-0d7f436e3b0f)
 
-* [Fixes Firefox Desktop](https://github.com/wahasa/Alpine/issues/1#issuecomment-1288258119)
+* [Fixes Firefox Desktop](https://github.com/wahasa/Fedora/issues/1#issuecomment-1396447589)
 </details>
