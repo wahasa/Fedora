@@ -12,8 +12,8 @@
 
 ## Installation
 
-Copy and paste this command to Termux :
-> pkg update && pkg upgrade
+Copy and paste this commands to Termux
+> pkg update
 
 * Install Fedora
 ```
@@ -45,61 +45,65 @@ Basic commands Fedora
 > dnf -h : Help all commands.
 
 ---
-## Desktop Environment
+## Desktop Environments
 
-on Fedora, run this command :
-> apt update && apt upgrade
+on Fedora, run this commands
+> dnf update
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
 <p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/xfce.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Lxde</code></b></summary>
 <p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/lxde.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Lxqt</code></b></summary>
 <p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/lxqt.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Kde</code></b></summary>
 <p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/kde.jpg"</p>
-</details>
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
+</details>
 
 ---
 Feature
 - [x] Fixed Sound
 - [x] Access to Sdcard
-- [x] Fixed Browser Crash [Click here,.](https://github.com/wahasa/fedora/issues/1#issuecomment-1396447589)
+- [x] Access to Termux-x11
+- [x] Fixed Browser Crash  | Click here,.
+- [x] Install Applications | Click here,.
 
-Visit problems now in : [Issues](https://github.com/wahasa/fedora/issues)
+Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
 ---
 ## VNC Viewer
+<details></br>
+<summary><b><code>VNC Viewer Android</code></b></summary>
 
 * Start VNC Server
 
-on Fedora, run this command to start :
+on Fedora, run this command to start
 ```
 vnc-start
 ```
@@ -122,10 +126,19 @@ To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
 
-on Fedora, run this command to stop :
+on Fedora, run this command to stop
 ```
 vnc-stop
 ```
+
+---
+## Termux-x11
+<details></br>
+<summary><b><code>Termux-x11 Android</code></b></summary>
+
+> Click Here <
+</details>
+</details>
 </br>
 
 ---
