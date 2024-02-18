@@ -1,5 +1,5 @@
 Fedora Releases
-- https://fedoraproject.org
+- https://docs.fedoraproject.org/en-US/fedora/latest/release-notes
 
 Source Rootfs
 - https://archives.fedoraproject.org/pub/archive/fedora/linux/releases
