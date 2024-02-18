@@ -130,6 +130,7 @@ on Fedora, run this command to stop
 ```
 vnc-stop
 ```
+</details>
 
 ---
 ## Termux-x11
@@ -137,7 +138,6 @@ vnc-stop
 <summary><b><code>Termux-x11 Android</code></b></summary>
 
 > Click Here <
-</details>
 </details>
 </br>
 
