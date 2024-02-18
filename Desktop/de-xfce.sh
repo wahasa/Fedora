@@ -33,6 +33,6 @@ chmod +x /usr/local/bin/*
    echo ""
    echo "Vnc Server address will run at 127.0.0.1:5901"
    echo "Start Vnc Server, run vnc-start"
-   echo "Stop Vnc Server, run vnc-stop"
+   echo "Stop  Vnc Server, run vnc-stop"
    echo ""
 rm de-xfce.sh
