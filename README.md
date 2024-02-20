@@ -18,19 +18,22 @@ Copy and paste this commands to Termux
 <details></br>
 <summary><b><code>Install Parrot</code></b></summary>
 
-* Fedora 40
+* Fedora 40 (Container Image)
+Rootfs : Arm64, Amd64
 ```
-dnf install wget -y ; wget  ; chmod +x  ; ./
+pkg install wget -y ; wget  ; chmod +x  ; ./
 ```
 
-* Fedora 39
+* Fedora 36 (Container Image)
+Rootfs : Armhf, Arm64, Amd64
 ```
-dnf install wget -y ; wget  ; chmod +x  ; ./
+pkg install wget -y ; wget  ; chmod +x  ; ./
 ```
 
 * Fedora Development
+Rootfs : Arm64, Amd64
 ```
-dnf install wget -y ; wget  ; chmod +x  ; ./
+pkg install wget -y ; wget  ; chmod +x  ; ./
 ```
 </details>
 
