@@ -87,7 +87,7 @@ EOM
    #echo "Making $linux executable"
    chmod +x $bin
    #echo "Fixing permissions for $linux"
-   chmod -R 775 $folder
+   chmod -R 755 $folder
    #echo "Removing image for some space"
    rm $tarball
 #Sound Fix
