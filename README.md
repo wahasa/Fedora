@@ -15,11 +15,26 @@
 Copy and paste this commands to Termux
 > pkg update
 
-* Install Fedora
+<details></br>
+<summary><b><code>Install Parrot</code></b></summary>
+
+* Fedora 40
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/fedora/main/install.sh ; chmod +x install.sh ; ./install.sh
+dnf install wget -y ; wget  ; chmod +x  ; ./
 ```
 
+* Fedora 39
+```
+dnf install wget -y ; wget  ; chmod +x  ; ./
+```
+
+* Fedora Development
+```
+dnf install wget -y ; wget  ; chmod +x  ; ./
+```
+</details>
+
+---
 * Start Fedora
 ```
 fedora
