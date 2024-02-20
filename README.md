@@ -16,22 +16,23 @@ Copy and paste this commands to Termux
 > pkg update
 
 <details></br>
-<summary><b><code>Install Parrot</code></b></summary>
+<summary><b><code>Install Fedora</code></b></summary>
 
 * Fedora 40 (Container Image)
+
 Rootfs : Arm64, Amd64
 ```
-pkg install wget -y ; wget  ; chmod +x  ; ./
+pkg install wget -y ; wget  ; chmod +x Fedora40.sh ; ./Fedora40.sh
 ```
 
 * Fedora 36 (Container Image)
+
 Rootfs : Armhf, Arm64, Amd64
 ```
-pkg install wget -y ; wget  ; chmod +x  ; ./
+pkg install wget -y ; wget  ; chmod +x Fedora36.sh ; ./Fedora36.sh
 ```
 
-* List Fedora | [Click here,.]
-```
+* List Fedora | Click here
 </details>
 
 ---
