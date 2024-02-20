@@ -30,10 +30,7 @@ Rootfs : Armhf, Arm64, Amd64
 pkg install wget -y ; wget  ; chmod +x  ; ./
 ```
 
-* Fedora Development
-Rootfs : Arm64, Amd64
-```
-pkg install wget -y ; wget  ; chmod +x  ; ./
+* List Fedora | Click here,.
 ```
 </details>
 
