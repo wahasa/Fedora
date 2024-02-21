@@ -105,4 +105,4 @@ bash $linux
    echo ""
    echo "You can now start Fedora with 'fedora' script next time"
    echo ""
-#rm Fedora49.sh
+#rm Fedora40.sh
