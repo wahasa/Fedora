@@ -2,7 +2,7 @@
 pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
 termux-setup-storage
-fedora=35
+fedora=40
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
