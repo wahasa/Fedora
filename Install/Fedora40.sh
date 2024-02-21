@@ -86,7 +86,6 @@ EOM
    chmod -R 755 ~/$folder
    #echo "Removing image for some space"
    rm $tarball
-#Sound Fix
 echo '#!/bin/bash
 pulseaudio --start \
     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
