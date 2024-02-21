@@ -106,4 +106,4 @@ bash $linux
    echo ""
    echo "You can now start Fedora with 'fedora' script next time"
    echo ""
-#rm Fedora41.sh
+#rm FedoraDev.sh
