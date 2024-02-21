@@ -18,21 +18,28 @@ Copy and paste this commands to Termux
 <details></br>
 <summary><b><code>Install Fedora</code></b></summary>
 
-* Fedora 40 (Container Image)
+#### • Fedora 40 (Container Image)
 
 Rootfs : Arm64, Amd64
 ```
-pkg install wget -y ; wget  ; chmod +x Fedora40.sh ; ./Fedora40.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora40.sh ; chmod +x Fedora40.sh ; ./Fedora40.sh
 ```
 
-* Fedora 36 (Container Image)
+#### • Fedora 36 (Container Image)
 
 Rootfs : Armhf, Arm64, Amd64
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora36.sh ; chmod +x Fedora36.sh ; ./Fedora36.sh
+```
+
+#### • Fedora 41 (Development)
+
+Rootfs : Arm64, Amd64
 ```
 pkg install wget -y ; wget  ; chmod +x Fedora36.sh ; ./Fedora36.sh
 ```
 
-* List Fedora | Click here
+#### • List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
 </details>
 
 ---
