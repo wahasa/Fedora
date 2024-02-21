@@ -36,7 +36,7 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 Rootfs : Arm64, Amd64
 ```
-pkg install wget -y ; wget  ; chmod +x Fedora36.sh ; ./Fedora36.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/FedoraDev.sh ; chmod +x FedoraDev.sh ; ./FedoraDev.sh
 ```
 
 #### • List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
@@ -55,7 +55,7 @@ exit
 
 * Remove Fedora
 ```
-rm -rf fedora-fs
+chmod -R 775 fedora-fs ; rm -rf fedora-fs
 ```
 
 ---
