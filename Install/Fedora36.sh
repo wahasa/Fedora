@@ -91,7 +91,6 @@ EOM
    chmod -R 755 $folder
    #echo "Removing image for some space"
    rm $tarball
-#Sound Fix
 echo '#!/bin/bash
 bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
