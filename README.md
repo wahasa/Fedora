@@ -45,7 +45,7 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 </details>
 
 Note :</br>
-If any "Upgrade Failed to Unpacking Filesystem", just ignore it.
+If any "Upgrade Failed to Unpacking Filesystem-3.xx-x.fcx", just ignore it.
 
 * Start Fedora
 ```
