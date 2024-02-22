@@ -83,7 +83,7 @@ on Fedora, run this commands
 ![xfce](https://github.com/wahasa/Fedora/assets/69626847/4703d88a-1725-4007-9d58-8882ae6c5c28)
 
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
+dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
 </details>
 
@@ -93,7 +93,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ![lxde](https://github.com/wahasa/Fedora/assets/69626847/60cd51ed-a2ca-4611-ad5e-6891354f6b7b)
 
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
+dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
 </details>
 
@@ -103,7 +103,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ![lxqt](https://github.com/wahasa/Fedora/assets/69626847/5e7ca264-fd6e-4d09-a015-774362736d46)
 
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
+dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
 </details>
 
@@ -113,7 +113,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
 
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
+dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
 </details>
 
