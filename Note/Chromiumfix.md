@@ -1,4 +1,4 @@
-### Fixed Chromium Parrot
+### Fixed Chromium Fedora
 ![Screenshot_2024-01-19-08-55-00-062_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/8e8206f1-fb6f-4b7b-b571-30c81182c8b5)
 
 ---
