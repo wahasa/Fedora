@@ -79,7 +79,8 @@ on Fedora, run this commands
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/xfce.jpg"</p>
+
+![xfce](https://github.com/wahasa/Fedora/assets/69626847/4703d88a-1725-4007-9d58-8882ae6c5c28)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
@@ -88,7 +89,8 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details></br>
 <summary><b><code>Install Desktop Lxde</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/lxde.jpg"</p>
+
+![lxde](https://github.com/wahasa/Fedora/assets/69626847/60cd51ed-a2ca-4611-ad5e-6891354f6b7b)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
@@ -97,7 +99,8 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details></br>
 <summary><b><code>Install Desktop Lxqt</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/lxqt.jpg"</p>
+
+![lxqt](https://github.com/wahasa/Fedora/assets/69626847/5e7ca264-fd6e-4d09-a015-774362736d46)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
@@ -106,7 +109,8 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details></br>
 <summary><b><code>Install Desktop Kde</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Fedora/main/Image/kde.jpg"</p>
+
+![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
