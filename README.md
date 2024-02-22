@@ -40,9 +40,13 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ```
 
 #### • List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
-</details>
 
 ---
+</details>
+
+Note :</br>
+If any "Upgrade Failed to Unpacking Filesystem", just ignore it.
+
 * Start Fedora
 ```
 fedora
