@@ -64,7 +64,7 @@ Basic commands Fedora
 > dnf upgrade : Upgrade package.</br>
 > dnf search (pkg) : Search package.</br>
 > dnf install (pkg) : Install package.</br>
-> dnf autoremove (pkg) : Delete package.</br>
+> dnf autoremove (pkg) : Delete pkg.</br>
 > dnf -h : Help all commands.
 
 ---
