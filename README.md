@@ -11,29 +11,24 @@
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ## Installation
-
 Copy and paste this commands to Termux
 > pkg update
 
-<details></br>
-<summary><b><code>Install Fedora</code></b></summary>
+<details><summary><b><code>Install Fedora</code></b></summary>
 
 #### • Fedora 40 (Container Image)
-
 Rootfs : Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora40.sh ; chmod +x Fedora40.sh ; ./Fedora40.sh
 ```
 
 #### • Fedora 36 (Container Image)
-
 Rootfs : Armhf, Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora36.sh ; chmod +x Fedora36.sh ; ./Fedora36.sh
 ```
 
 #### • Fedora 41 (Development)
-
 Rootfs : Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/FedoraDev.sh ; chmod +x FedoraDev.sh ; ./FedoraDev.sh
@@ -46,6 +41,7 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 Note :</br>
 If any "Upgrade Failed to Unpacking Filesystem-3.xx-x.fcx", just ignore it.
+</br>
 
 * Start Fedora
 ```
@@ -57,7 +53,7 @@ fedora
 exit
 ```
 
-* Remove Fedora
+* Delete Fedora
 ```
 chmod -R 775 fedora-fs ; rm -rf fedora-fs
 ```
@@ -76,42 +72,33 @@ Basic commands Fedora
 
 on Fedora, run this commands
 > dnf update
-
-<details></br>
-<summary><b><code>Install Desktop Xfce</code></b></summary>
+<details><summary><b><code>Install Desktop Xfce</code></b></summary>
 
 ![xfce](https://github.com/wahasa/Fedora/assets/69626847/4703d88a-1725-4007-9d58-8882ae6c5c28)
-
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
 </details>
 
-<details></br>
-<summary><b><code>Install Desktop Lxde</code></b></summary>
+<details><summary><b><code>Install Desktop Lxde</code></b></summary>
 
 ![lxde](https://github.com/wahasa/Fedora/assets/69626847/60cd51ed-a2ca-4611-ad5e-6891354f6b7b)
-
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
 </details>
 
-<details></br>
-<summary><b><code>Install Desktop Lxqt</code></b></summary>
+<details><summary><b><code>Install Desktop Lxqt</code></b></summary>
 
 ![lxqt](https://github.com/wahasa/Fedora/assets/69626847/5e7ca264-fd6e-4d09-a015-774362736d46)
-
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
 </details>
 
-<details></br>
-<summary><b><code>Install Desktop Kde</code></b></summary>
+<details><summary><b><code>Install Desktop Kde</code></b></summary>
 
 ![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
-
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
@@ -122,8 +109,8 @@ Feature
 - [x] Fixed Sound
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Fixed Browser Crash  | Click here,.
-- [x] Install Applications | Click here,.
+- [x] Fixed Browser Crash  | Click Here >
+- [x] Install Applications | Click Here >
 
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
@@ -133,14 +120,12 @@ Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 <summary><b><code>VNC Viewer Android</code></b></summary>
 
 * Start VNC Server
-
 on Fedora, run this command to start
 ```
 vnc-start
 ```
 
 * Open Vnc Viewer
-
 Add (+) VNC Client to connect, fill with :
 
 Address
@@ -156,7 +141,6 @@ Fedora Desktop
 To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
-
 on Fedora, run this command to stop
 ```
 vnc-stop
