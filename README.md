@@ -120,12 +120,14 @@ Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 <summary><b><code>VNC Viewer Android</code></b></summary>
 
 * Start VNC Server
+
 on Fedora, run this command to start
 ```
 vnc-start
 ```
 
 * Open Vnc Viewer
+
 Add (+) VNC Client to connect, fill with :
 
 Address
@@ -141,6 +143,7 @@ Fedora Desktop
 To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
+
 on Fedora, run this command to stop
 ```
 vnc-stop
