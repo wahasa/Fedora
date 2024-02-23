@@ -72,7 +72,7 @@ Basic commands Fedora
 
 on Fedora, run this commands
 > dnf update
-<details><summary><b><code>Install Desktop Xfce</code></b></summary>
+<details><summary><b><code>Install Xfce Desktop</code></b></summary>
 
 ![xfce](https://github.com/wahasa/Fedora/assets/69626847/4703d88a-1725-4007-9d58-8882ae6c5c28)
 ```
@@ -80,7 +80,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ```
 </details>
 
-<details><summary><b><code>Install Desktop Lxde</code></b></summary>
+<details><summary><b><code>Install Lxde Desktop</code></b></summary>
 
 ![lxde](https://github.com/wahasa/Fedora/assets/69626847/60cd51ed-a2ca-4611-ad5e-6891354f6b7b)
 ```
@@ -88,7 +88,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ```
 </details>
 
-<details><summary><b><code>Install Desktop Lxqt</code></b></summary>
+<details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
 ![lxqt](https://github.com/wahasa/Fedora/assets/69626847/5e7ca264-fd6e-4d09-a015-774362736d46)
 ```
@@ -96,7 +96,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ```
 </details>
 
-<details><summary><b><code>Install Desktop Kde</code></b></summary>
+<details><summary><b><code>Install Kde Desktop</code></b></summary>
 
 ![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
 ```
