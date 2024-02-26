@@ -69,9 +69,9 @@ Basic commands Fedora
 
 ---
 ## Desktop Environments
-
 on Fedora, run this commands
 > dnf update
+
 <details><summary><b><code>Install Xfce Desktop</code></b></summary>
 
 ![xfce](https://github.com/wahasa/Fedora/assets/69626847/4703d88a-1725-4007-9d58-8882ae6c5c28)
