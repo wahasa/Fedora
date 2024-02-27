@@ -15,10 +15,10 @@ if [ "$first" != 1 ];then
                 case `dpkg --print-architecture` in
                 aarch64)
                         archurl="aarch64" ;;
-                arm*)
-                        archurl="armhfp" ;;
-                #ppc64le)
-                #       archurl="ppc64le" ;;
+                #arm*)
+                #       archurl="armhf" ;;
+                ppc64le)
+                        archurl="ppc64le" ;;
                 x86_64)
                         archurl="x86_64" ;;
                 *)
@@ -31,8 +31,7 @@ if [ "$first" != 1 ];then
 	mkdir -p $folder/binds
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
-        proot --link2symlink tar -xf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
-        tar -xf layer.tar
+        proot --link2symlink tar -xf ${cur}/${tarball}||:
         cd "$cur"
    fi
    echo "fedora" > ~/"$folder"/etc/hostname
@@ -44,6 +43,9 @@ linux=fedora
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
+pulseaudio --start \
+    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
+    --exit-idle-time=-1
 cd \$(dirname \$0)
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
@@ -58,7 +60,9 @@ if [ -n "\$(ls -A $folder/binds)" ]; then
     done
 fi
 command+=" -b /dev"
+command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap"
 command+=" -b /proc"
+command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
 command+=" -b $folder/root:/dev/shm"
 ## uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
@@ -83,13 +87,10 @@ EOM
    #echo "Making $linux executable"
    chmod +x $bin
    #echo "Fixing permissions for $linux"
-   chmod -R 755 ~/$folder
+   chmod -R 755 $folder
    #echo "Removing image for some space"
    rm $tarball
 echo '#!/bin/bash
-pulseaudio --start \
-    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
-    --exit-idle-time=-1
 bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
