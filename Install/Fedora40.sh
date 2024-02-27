@@ -24,7 +24,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/${fedora}/Container/${archurl}/images/Fedora-Container-Base-${fedora}-1.2.${archurl}.tar.xz" -O $tarball
+                wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
