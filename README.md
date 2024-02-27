@@ -28,12 +28,6 @@ Rootfs : Armhf, Arm64, Amd64
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora36.sh ; chmod +x Fedora36.sh ; ./Fedora36.sh
 ```
 
-#### Fedora 41 (Development)
-Rootfs : Arm64, Amd64
-```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/FedoraDev.sh ; chmod +x FedoraDev.sh ; ./FedoraDev.sh
-```
-
 #### List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
 
 ---
@@ -91,17 +85,11 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 <details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
 ![lxqt](https://github.com/wahasa/Fedora/assets/69626847/5e7ca264-fd6e-4d09-a015-774362736d46)
-```
-dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
-```
 </details>
 
 <details><summary><b><code>Install Kde Desktop</code></b></summary>
 
 ![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
-```
-dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
-```
 </details>
 
 ---
