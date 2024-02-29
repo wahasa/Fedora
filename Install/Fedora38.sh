@@ -98,7 +98,7 @@ chmod +x $PREFIX/bin/$linux
    echo "Add Fedora Package,.."
    echo ""
 echo "#!/bin/bash
-dnf install ncurses nano -y
+dnf install ncurses nano sudo -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
