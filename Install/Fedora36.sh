@@ -17,8 +17,8 @@ if [ "$first" != 1 ];then
                         archurl="aarch64" ;;
                 arm*)
                         archurl="armhfp" ;;
-                #ppc64le)
-                #       archurl="ppc64le" ;;
+                #i386)
+                #       archurl="x86" ;;
                 x86_64)
                         archurl="x86_64" ;;
                 *)
