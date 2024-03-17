@@ -99,6 +99,7 @@ chmod +x $PREFIX/bin/$linux
    echo ""
 echo "#!/bin/bash
 dnf install ncurses nano sudo -y
+cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
