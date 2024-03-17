@@ -4,7 +4,7 @@
 
 ![Screenshot_2024-02-25-12-56-42-442_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/2d6971f9-68b0-4a6d-a470-050270a36ccf)
 ```
-sudo apt install blender
+sudo dnf install blender
 ```
 </details>
 
@@ -26,7 +26,7 @@ sudo apt install blender
 
 ![Screenshot_2024-02-25-12-53-02-290_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/98003303-2663-4a0c-9b1b-57e1390ef002)
 ```
-sudo apt install gedit
+sudo dnf install gedit
 ```
 </details>
 
@@ -34,7 +34,7 @@ sudo apt install gedit
 
 ![Screenshot_2024-02-25-13-34-27-393_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/973960ac-dba8-44c9-a8e5-e9cb174448c0)
 ```
-sudo apt install gimp
+sudo dnf install gimp
 ```
 </details>
 
@@ -42,7 +42,7 @@ sudo apt install gimp
 
 ![Screenshot_2024-02-25-13-35-31-167_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/c9d68b0a-beea-4235-9e15-bd87dbf4cca5)
 ```
-sudo apt install inkscape
+sudo dnf install inkscape
 ```
 </details>
 
@@ -50,7 +50,7 @@ sudo apt install inkscape
 
 ![Screenshot_2024-02-25-13-41-35-534_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/367a0c90-0fc0-40ae-ab00-506a3aab32c0)
 ```
-sudo apt install kdenlive
+sudo dnf install kdenlive
 ```
 </details>
 
@@ -58,7 +58,7 @@ sudo apt install kdenlive
 
 ![Screenshot_2024-02-25-13-39-45-975_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/ecf55dc7-5c37-4591-bed4-dc638cf0e4a5)
 ```
-sudo apt install krita
+sudo dnf install krita
 ```
 </details>
 
@@ -74,7 +74,7 @@ wget https://raw.githubusercontent.com/wahasa/Parrot/main/libreofficefix.sh ; ch
 
 ![Screenshot_2024-02-25-13-42-26-898_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/02abe727-8f23-4ee1-a20b-e4d5e56912a1)
 ```
-sudo apt install lollypop
+sudo dnf install lollypop
 ```
 </details>
 
@@ -83,7 +83,7 @@ sudo apt install lollypop
 
 ![Screenshot_2024-02-25-12-17-01-291_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f08dc990-7b19-41af-ac2c-c88600e88ca5)
 ```
-sudo apt install obs-studio
+sudo dnf install obs-studio
 ```
 </details>
 
@@ -91,7 +91,7 @@ sudo apt install obs-studio
 
 ![Screenshot_2024-02-25-12-54-58-740_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/b13fd4db-40a5-4127-a497-9fc4b73bd92a)
 ```
-sudo apt install thunderbird
+sudo dnf install thunderbird
 ```
 </details>
 
@@ -99,7 +99,7 @@ sudo apt install thunderbird
 
 ![Screenshot_2024-02-25-12-52-00-294_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/1b4f85d6-8bb0-423c-8d49-526a5ecf58bb)
 ```
-sudo apt install vim
+sudo dnf install vim
 ```
 </details>
 
@@ -107,7 +107,7 @@ sudo apt install vim
 
 ![Screenshot_2024-02-25-14-58-50-635_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/e1017552-7765-4330-a47c-69f7bdf869ca)
 ```
-wget https://raw.githubusercontent.com/wahasa/Parrot/main/vscodefix.sh ; chmod +x vscodefix.sh ; ./vscodefix.sh
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/vscodefix.sh ; chmod +x vscodefix.sh ; ./vscodefix.sh
 ```
 </details>
 </br>
