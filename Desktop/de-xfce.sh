@@ -1,7 +1,7 @@
 #!/bin/bash
 #Get the necessary components
 dnf update
-dnf install sudo -y
+dnf install nano sudo -y
 dnf install @xfce-desktop-environment -y
 dnf install tigervnc-server dbus -y
 
@@ -32,6 +32,7 @@ chmod +x /usr/local/bin/*
    clear
    echo ""
    echo "Vnc Server address will run at 127.0.0.1:5901"
+   echo ""
    echo "Start Vnc Server, run vnc-start"
    echo "Stop  Vnc Server, run vnc-stop"
    echo ""
