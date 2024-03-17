@@ -68,7 +68,7 @@ on Fedora, run this commands
 
 <details><summary><b><code>Install Xfce Desktop</code></b></summary>
 
-![xfce](https://github.com/wahasa/Fedora/assets/69626847/4703d88a-1725-4007-9d58-8882ae6c5c28)
+![Screenshot_2024-03-13-16-58-38-267_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/c023e776-889b-4570-8b14-024a70707321)
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
@@ -84,7 +84,10 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
-![lxqt](https://github.com/wahasa/Fedora/assets/69626847/5e7ca264-fd6e-4d09-a015-774362736d46)
+![Screenshot_2024-03-12-16-49-08-489_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/aab406f5-b039-4071-b8c0-0e7d4ecb52a2)
+```
+dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
+```
 </details>
 
 <details><summary><b><code>Install Kde Desktop</code></b></summary>
