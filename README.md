@@ -98,7 +98,7 @@ Feature
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
 - [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Note)
-- [x] Install Applications | Click Here >
+- [x] Install Applications | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Apps)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
