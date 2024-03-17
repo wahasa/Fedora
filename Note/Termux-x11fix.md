@@ -1,5 +1,5 @@
 ### Termux-x11 Fedora
-![Screenshot_2024-02-29-18-24-25-397_com termux x11](https://github.com/wahasa/Alpine/assets/69626847/95a01efb-0e17-41c3-972b-9147c7336385)
+![Screenshot_2024-03-17-09-31-52-047_com termux x11](https://github.com/wahasa/Fedora/assets/69626847/e0239f45-dacd-4255-83c9-263ef393482d)
 
 ---
 #### Commands in Termux
