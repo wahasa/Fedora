@@ -28,8 +28,8 @@ Example :
 Add new session :</br>
 Swipe the screen from left to right in termux, click 'New Session'.
 
-#### Commands in Alpine
-> apk add nano
+#### Commands in Fedora
+> dnf install nano -y
 
 * Edit script
 ```
