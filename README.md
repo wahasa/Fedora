@@ -76,7 +76,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details><summary><b><code>Install Lxde Desktop</code></b></summary>
 
-![lxde](https://github.com/wahasa/Fedora/assets/69626847/60cd51ed-a2ca-4611-ad5e-6891354f6b7b)
+![Screenshot_2024-03-17-09-22-31-146_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/d0cab67d-f069-4a79-8ef3-fd499ea6574f)
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
