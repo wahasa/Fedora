@@ -17,7 +17,7 @@ Note :</br>
 nano /usr/share/applications/code.desktop
 ```
 
-Add script
+* Add script
 ```
 Exec=/usr/share/code/code --no-sandbox --unity-launch %F
 ```
@@ -25,3 +25,11 @@ Exec=/usr/share/code/code --no-sandbox --unity-launch %F
 Save : ctrl + x, click Y enter.
 
 Example :
+
+* You can open vscode now.
+</br>
+
+---
+<p align="center">Good Luck</p>
+
+---
