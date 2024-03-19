@@ -26,7 +26,7 @@ Save : ctrl + x, click Y enter.
 
 Example :
 
-![Screenshot_2024-03-19-08-03-33-865_com termux](https://github.com/wahasa/Fedora/assets/69626847/d79b530d-e56a-423c-8be7-54af5a4c3538)
+![Screenshot_2024-03-19-08-03-33-865_com termux](https://github.com/wahasa/Fedora/assets/69626847/8f0794b1-d40f-4e3e-bbdf-a31075ba6c02)
 
 * You can open chromium now.
 </br>
