@@ -9,14 +9,14 @@
 
 <details><summary><code><b>Firefox</b></code></summary>
 
-![Screenshot_2024-03-07-13-42-25-645_com realvnc viewer android](https://github.com/wahasa/Alpine/assets/69626847/4750cf77-bf53-4dfe-93af-3c9319e6163a)
+![Screenshot_2024-03-19-07-00-51-893_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/8e951f34-2a72-40f2-b5da-bc143ec4b178)
 
 [> Click Here <](https://github.com/wahasa/Fedora/blob/main/Note/Firefoxfix.md)
 </details>
 
 <details><summary><code><b>Gedit</b></code></summary>
 
-![Screenshot_2024-02-25-12-53-02-290_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/98003303-2663-4a0c-9b1b-57e1390ef002)
+![Screenshot_2024-03-19-07-17-37-990_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/9c78417e-34de-445d-bad1-19c0a85f7c42)
 ```
 sudo dnf install gedit
 ```
@@ -24,7 +24,7 @@ sudo dnf install gedit
 
 <details><summary><code><b>GIMP</b></code></summary>
 
-![Screenshot_2024-02-25-13-34-27-393_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/973960ac-dba8-44c9-a8e5-e9cb174448c0)
+![Screenshot_2024-03-19-07-13-32-815_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/0fa44a26-b366-40ed-a85e-a06462849e6e)
 ```
 sudo dnf install gimp
 ```
@@ -40,7 +40,7 @@ sudo dnf install inkscape
 
 <details><summary><code><b>Kdenlive</b></code></summary>
 
-![Screenshot_2024-02-25-13-41-35-534_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/367a0c90-0fc0-40ae-ab00-506a3aab32c0)
+![Screenshot_2024-03-19-07-11-33-858_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/865079ae-234e-4143-a472-84270154b56f)
 ```
 sudo dnf install kdenlive
 ```
@@ -56,7 +56,7 @@ sudo dnf install krita
 
 <details><summary><code><b>Lollypop</b></code></summary>
 
-![Screenshot_2024-02-25-13-42-26-898_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/02abe727-8f23-4ee1-a20b-e4d5e56912a1)
+![Screenshot_2024-03-19-07-09-54-118_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/15d6a1a3-7f90-47af-a5c2-adb17cacda73)
 ```
 sudo dnf install lollypop
 ```
@@ -65,7 +65,7 @@ sudo dnf install lollypop
 <details>
 <summary><code><b>OBS Studio</b></code></summary>
 
-![Screenshot_2024-02-25-12-17-01-291_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f08dc990-7b19-41af-ac2c-c88600e88ca5)
+![Screenshot_2024-03-19-07-09-02-351_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/30739271-3758-412e-a00e-a0eef1655369)
 ```
 sudo dnf install obs-studio
 ```
@@ -73,7 +73,7 @@ sudo dnf install obs-studio
 
 <details><summary><code><b>Thunderbird</b></code></summary>
 
-![Screenshot_2024-02-25-12-54-58-740_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/b13fd4db-40a5-4127-a497-9fc4b73bd92a)
+![Screenshot_2024-03-19-07-03-54-219_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/753c37d2-21ba-467c-990f-22f38a84acf7)
 ```
 sudo dnf install thunderbird
 ```
