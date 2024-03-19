@@ -4,6 +4,7 @@
 
 ---
 ## Fedora on Termux Android
+![d-default](https://github.com/wahasa/Fedora/assets/69626847/620acf3f-9ee7-414b-af5a-b933f68717f6)
 
 ---
 • Install Apps on Android
