@@ -1,7 +1,7 @@
 ### Visual Studio Code Fedora
 ![Screenshot_2024-03-19-09-51-51-880_com realvnc viewer android](https://github.com/wahasa/Parrot/assets/69626847/30b7bdaa-78d7-4b04-91bd-a8e4713fec43)
 
-Requirement
+Requirements
 - [x] Linux can access Sdcard
 - [x] Download file vscode
 
