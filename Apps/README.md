@@ -82,9 +82,8 @@ sudo dnf install thunderbird
 <details><summary><code><b>VS Code</b></code></summary>
 
 ![Screenshot_2024-02-25-14-58-50-635_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/e1017552-7765-4330-a47c-69f7bdf869ca)
-```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/vscodefix.sh ; chmod +x vscodefix.sh ; ./vscodefix.sh
-```
+
+[> Click Here <](https://github.com/wahasa/Fedora/blob/main/Note/Vscodefix.md)
 </details>
 </br>
 
