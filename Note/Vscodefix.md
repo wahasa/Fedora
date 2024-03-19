@@ -10,6 +10,7 @@ Requirements
 
 [> Download <](https://code.visualstudio.com/download)
 
+Note :</br>
 • X64 (X86_64/Amd64)</br>
 • Arm32 (Armv7/6/Armhf)</br>
 • Arm64 (Aarch64/Armv8)
