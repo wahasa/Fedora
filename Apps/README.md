@@ -32,7 +32,7 @@ sudo dnf install gimp
 
 <details><summary><code><b>Inkscape</b></code></summary>
 
-![Screenshot_2024-02-25-13-35-31-167_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/c9d68b0a-beea-4235-9e15-bd87dbf4cca5)
+![Screenshot_2024-03-19-07-14-36-475_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/47f08eb4-37e0-43e7-9f21-73485f7fa07e)
 ```
 sudo dnf install inkscape
 ```
@@ -48,7 +48,7 @@ sudo dnf install kdenlive
 
 <details><summary><code><b>Krita</b></code></summary>
 
-![Screenshot_2024-02-25-13-39-45-975_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/ecf55dc7-5c37-4591-bed4-dc638cf0e4a5)
+![Screenshot_2024-03-19-07-16-49-359_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/f2b1637a-eb21-4bf9-aee0-cbad9ebd411f)
 ```
 sudo dnf install krita
 ```
