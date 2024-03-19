@@ -6,9 +6,9 @@ Requirements
 - [x] Download file vscode
 
 ---
-* Link Download Vs-Code
+* Download File Vs-Code
 
-[> Download <](https://code.visualstudio.com/download)
+- [x] [Link Download](https://code.visualstudio.com/download)
 
 Note :</br>
 • X64 (X86_64/Amd64)</br>
