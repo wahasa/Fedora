@@ -1,9 +1,15 @@
 ### Visual Studio Code Fedora
+![Screenshot_2024-03-19-09-51-51-880_com realvnc viewer android](https://github.com/wahasa/Parrot/assets/69626847/30b7bdaa-78d7-4b04-91bd-a8e4713fec43)
 
-* Download Vs-code
-- [x] [Link Download](https://code.visualstudio.com/download)
+Requirement
+- [x] Linux can access Sdcard
+- [x] Download file vscode
 
-Note :</br>
+---
+* Link Download Vs-Code
+
+[> Download <](https://code.visualstudio.com/download)
+
 • X64 (X86_64/Amd64)</br>
 • Arm32 (Armv7/6/Armhf)</br>
 • Arm64 (Aarch64/Armv8)
@@ -11,6 +17,17 @@ Note :</br>
 ---
 #### Commands in Fedora
 > dnf install nano -y
+
+* Move files
+```
+cd /sdcard/Download
+```
+```
+cp (Name file).rpm ~/
+```
+```
+cd
+```
 
 * Edit script
 ```
