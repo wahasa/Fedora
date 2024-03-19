@@ -14,12 +14,12 @@ on Fedora, run this commands
 
 * Edit script
 ```
-nano /usr/share/applications/ chromium-browser.desktop
+nano /usr/share/applications/chromium-browser.desktop
 ```
 
 * Add script
 ```
-Exec=/usr/bin/chromium-browser --no-sandbox --test-type %U
+Exec=/usr/bin/chromium-browser --no sandbox --test-type %U
 ```
 
 Save : ctrl + x, click Y enter.
