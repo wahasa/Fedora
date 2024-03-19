@@ -43,6 +43,8 @@ Save : ctrl + x, click Y enter.
 
 Example :
 
+![Screenshot_2024-03-19-10-04-12-456_com termux](https://github.com/wahasa/Parrot/assets/69626847/dd388f76-8c13-47b3-b4de-3dbb31a9e430)
+
 * You can open vscode now.
 </br>
 
