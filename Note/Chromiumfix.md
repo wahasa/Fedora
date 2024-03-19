@@ -3,10 +3,10 @@
 
 ---
 * Install Chromium
-> dnf install chromium
+> dnf install chromium -y
 
 * Uninstall Chromium
-> dnf remove chromium
+> dnf remove chromium -y
 
 ---
 #### Fixed chromium can't be opened
