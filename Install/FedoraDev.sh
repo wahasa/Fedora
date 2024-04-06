@@ -24,7 +24,8 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
+		wget " https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar"
+                #wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -32,6 +33,7 @@ if [ "$first" != 1 ];then
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xf ${cur}/${tarball}||:
+	tar -xf layer.tar
         cd "$cur"
    fi
    echo "fedora" > ~/"$folder"/etc/hostname
