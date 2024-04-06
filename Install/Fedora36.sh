@@ -33,6 +33,7 @@ if [ "$first" != 1 ];then
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
         tar -xf layer.tar
+	rm layer.tar
         cd "$cur"
    fi
    echo "fedora" > ~/"$folder"/etc/hostname
