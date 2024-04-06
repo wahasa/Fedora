@@ -3,7 +3,6 @@ pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
 termux-setup-storage
 fedora=40
-build=1.10.oci
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
@@ -25,8 +24,8 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar"
-		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/Fedora-Container-Base-Generic.${archurl}-${fedora}-${build}.tar.xz" -O $tarball
+		#wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar"
+		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/ca15e4374cd315b7dba84485bf330377cd50c50f/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -34,7 +33,7 @@ if [ "$first" != 1 ];then
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xf ${cur}/${tarball}||:
-	tar -xf layer.tar
+	#proot --link2symlink tar -xf ${cur}/layer.tar
         cd "$cur"
    fi
    echo "fedora" > ~/"$folder"/etc/hostname
@@ -93,6 +92,7 @@ EOM
    chmod -R 755 $folder
    #echo "Removing image for some space"
    rm $tarball
+   #rm layer.tar
 echo '#!/bin/bash
 bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
