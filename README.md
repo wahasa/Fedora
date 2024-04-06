@@ -94,6 +94,9 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 <details><summary><b><code>Install Kde Desktop</code></b></summary>
 
 ![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
+```
+dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
+```
 </details>
 
 ---
