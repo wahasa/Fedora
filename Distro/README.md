@@ -10,3 +10,15 @@
 ```
 pkg install proot-distro -y ; proot-distro install fedora
 ```
+
+* Add new script
+```
+nano $PREFIX/bin/fedora
+```
+```
+#!/bin/bash
+
+pulseaudio --start \
+    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
+    --exit-idle-time=-1
+```
