@@ -13,7 +13,7 @@ pkg install proot-distro -y ; proot-distro install fedora
 
 <b>Login Fedora</b>
 ```
-proot-distro login fedora
+pd login fedora --shared-tmp
 ```
 
 <b>Logout Fedora</b>
@@ -21,6 +21,24 @@ proot-distro login fedora
 exit
 ```
 
+<b>Add User Name</b>
+```
+adduser wahasa
+```
+```
+passwd wahasa
+```
+```
+echo "wahasa    ALL=(ALL)       ALL" >> /etc/sudoers
+```
+
+<b>Login User Name</b>
+```
+pd login fedora --user wahasa --shared-tmp
+```
+
+<b>Fix Sound Output</b>
+* In Termux
 ```
 nano $PREFIX/bin/fedora
 ```
@@ -33,4 +51,9 @@ pulseaudio --start \
 ```
 ```
 chmod +x $PREFIX/bin/fedora
+```
+
+* In Fedora
+```
+echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
