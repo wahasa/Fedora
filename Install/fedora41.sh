@@ -98,6 +98,7 @@ chmod +x $PREFIX/bin/$linux
    echo "Add Fedora Package,.."
    echo ""
 echo "#!/bin/bash
+dnf update
 dnf install ncurses nano sudo -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
