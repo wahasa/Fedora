@@ -6,7 +6,7 @@ fedora=41
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
-        echo "skipping downloading"
+        echo "Skipping Downloading"
 fi
 tarball="fedora-rootfs.tar"
 if [ "$first" != 1 ];then
@@ -22,7 +22,7 @@ if [ "$first" != 1 ];then
                 x86_64)
                         archurl="x86_64" ;;
                 *)
-                        echo "unknown architecture"; exit 1 ;;
+                        echo "Unknown Architecture"; exit 1 ;;
                 esac
 		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar" -O $tarball
         fi
