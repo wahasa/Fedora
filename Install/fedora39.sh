@@ -1,12 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
-pkg install proot pulseaudio -y
+pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
 fedora=39
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
-        echo "skipping downloading"
+        echo "Skipping Downloading"
 fi
 tarball="fedora-rootfs.tar.xz"
 if [ "$first" != 1 ];then
@@ -22,7 +22,7 @@ if [ "$first" != 1 ];then
                 x86_64)
                         archurl="x86_64" ;;
                 *)
-                        echo "unknown architecture"; exit 1 ;;
+                        echo "Unknown Architecture"; exit 1 ;;
                 esac
                 wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
         fi
@@ -89,9 +89,9 @@ EOM
    #echo "Fixing permissions for $linux"
    chmod -R 755 $folder
    #echo "Removing image for some space"
-   rm $tarball
-echo '#!/bin/bash
-bash .fedora' > $PREFIX/bin/$linux
+   #rm $tarball
+echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
+echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
    echo ""
