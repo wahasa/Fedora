@@ -98,6 +98,7 @@ chmod +x $PREFIX/bin/$linux
    echo "Add Fedora Package,.."
    echo ""
 echo "#!/bin/bash
+dnf update
 dnf install ncurses nano sudo -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
@@ -105,6 +106,10 @@ exit" > $folder/root/.bash_profile
 bash $linux
    clear
    echo ""
-   echo "You can now start Fedora with 'fedora' script next time"
+   echo "You can login to Fedora with 'fedora' script next time"
    echo ""
-#rm Fedora39.sh
+   #rm fedora39.sh
+
+#
+# Script edited by 'WaHaSa', Script V3-revision.
+#
