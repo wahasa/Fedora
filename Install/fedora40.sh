@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
-pkg install proot pulseaudio -y
+pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
 fedora=40
 folder=fedora-fs
@@ -8,7 +8,7 @@ if [ -d "$folder" ]; then
         first=1
         echo "skipping downloading"
 fi
-tarball="fedora-rootfs.tar.xz"
+tarball="fedora-rootfs.tar"
 if [ "$first" != 1 ];then
         if [ ! -f $tarball ]; then
                 echo "Download Rootfs, this may take a while base on your internet speed."
@@ -24,8 +24,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-		#wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar"
-		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/ca15e4374cd315b7dba84485bf330377cd50c50f/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
+		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -33,7 +32,6 @@ if [ "$first" != 1 ];then
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xf ${cur}/${tarball}||:
-	#proot --link2symlink tar -xf ${cur}/layer.tar
         cd "$cur"
    fi
    echo "fedora" > ~/"$folder"/etc/hostname
@@ -91,16 +89,16 @@ EOM
    #echo "Fixing permissions for $linux"
    chmod -R 755 $folder
    #echo "Removing image for some space"
-   rm $tarball
-   #rm layer.tar
-echo '#!/bin/bash
-bash .fedora' > $PREFIX/bin/$linux
+   #rm $tarball
+echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
+echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
    echo ""
    echo "Add Fedora Package,.."
    echo ""
 echo "#!/bin/bash
+dnf update
 dnf install ncurses nano sudo -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
@@ -108,6 +106,10 @@ exit" > $folder/root/.bash_profile
 bash $linux
    clear
    echo ""
-   echo "You can now start Fedora with 'fedora' script next time"
+   echo "You can login to Fedora with 'fedora' script next time"
    echo ""
-#rm Fedora40.sh
+   #rm fedora40.sh
+
+#
+# Script edited by 'WaHaSa', Script V3-revision.
+#
