@@ -91,10 +91,9 @@ EOM
    #echo "Fixing permissions for $linux"
    chmod -R 755 $folder
    #echo "Removing image for some space"
-   rm $tarball
-   #rm layer.tar
-echo '#!/bin/bash
-bash .fedora' > $PREFIX/bin/$linux
+   #rm $tarball ; rm layer.tar
+echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
+echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
    echo ""
@@ -108,6 +107,10 @@ exit" > $folder/root/.bash_profile
 bash $linux
    clear
    echo ""
-   echo "You can now start Fedora with 'fedora' script next time"
+   echo "You can login to Fedora with 'fedora' script next time"
    echo ""
-#rm FedoraDev.sh
+   #rm fedora41.sh
+
+#
+# Script edited by 'WaHaSa', Script V3-revision.
+#
