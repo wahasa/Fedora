@@ -4,11 +4,11 @@
 
 ---
 ## Fedora on Termux Android
-![d-default](https://github.com/wahasa/Fedora/assets/69626847/620acf3f-9ee7-414b-af5a-b933f68717f6)
+![fedora](https://github.com/wahasa/Project/assets/69626847/186d4196-5c66-41de-80bd-90ef6e012c5d)
 
 ---
 • Install Apps on Android
-- [x] [Termux](https://apkcombo.com/id/termux/com.termux)
+- [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ## Installation
@@ -17,26 +17,22 @@ Copy and paste this commands to Termux
 
 <details><summary><b><code>Install Fedora</code></b></summary>
 
-#### Fedora 40 (Container Image)
+#### Fedora 41 (Container Image)
 Rootfs : Arm64, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora40.sh ; chmod +x Fedora40.sh ; ./Fedora40.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora40.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
 #### Fedora 36 (Container Image)
 Rootfs : Armhf, Arm64, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/Fedora36.sh ; chmod +x Fedora36.sh ; ./Fedora36.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
 ```
 
 #### List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
 
 ---
 </details>
-
-Note :</br>
-If any "Upgrade Failed to Unpacking Filesystem-3.xx-x.fcx", just ignore it.
-</br>
 
 * Start Fedora
 ```
@@ -50,7 +46,7 @@ exit
 
 * Delete Fedora
 ```
-chmod -R 775 fedora-fs ; rm -rf fedora-fs
+chmod -R 775 fedora-fs ; rm -rf fedora-fs .fedora $PREFIX/bin/fedora
 ```
 
 ---
