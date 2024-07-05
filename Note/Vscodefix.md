@@ -30,6 +30,11 @@ cp (Name file).rpm ~/
 cd
 ```
 
+* Install Pkg
+```
+dnf install ~/code*
+```
+
 * Edit script
 ```
 nano /usr/share/applications/code.desktop
