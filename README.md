@@ -23,6 +23,12 @@ Rootfs : Arm64, Amd64
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
+#### Fedora 40 (Container Image)
+Rootfs : Arm64, Amd64
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora40.sh ; chmod +x fedora40.sh ; ./fedora40.sh
+```
+
 #### Fedora 36 (Container Image)
 Rootfs : Armhf, Arm64, Amd64
 ```
@@ -60,7 +66,7 @@ Basic commands Fedora
 
 ---
 ## Desktop Environments
-on Fedora, run this commands
+In Fedora, run this commands
 > dnf update
 
 <details><summary><b><code>Install Xfce Desktop</code></b></summary>
