@@ -17,10 +17,10 @@ Copy and paste this commands to Termux
 
 <details><summary><b><code>Install Fedora</code></b></summary>
 
-#### Fedora 41 (Container Image)
+#### Fedora 41 (Pre-release)
 Rootfs : Arm64, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora40.sh ; chmod +x fedora41.sh ; ./fedora41.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
 #### Fedora 36 (Container Image)
@@ -112,7 +112,7 @@ Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
 * Start VNC Server
 
-on Fedora, run this command to start
+In Fedora, run this command to start
 ```
 vnc-start
 ```
@@ -135,7 +135,7 @@ To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
 
-on Fedora, run this command to stop
+In Fedora, run this command to stop
 ```
 vnc-stop
 ```
