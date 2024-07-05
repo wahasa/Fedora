@@ -71,7 +71,7 @@ In Fedora, run this commands
 
 <details><summary><b><code>Install Xfce Desktop</code></b></summary>
 
-![Screenshot_2024-03-13-16-58-38-267_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/c023e776-889b-4570-8b14-024a70707321)
+![xfce](https://github.com/wahasa/Project/assets/69626847/8a5d72d8-d08b-491f-a209-80e2fa68786a)
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
@@ -79,7 +79,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details><summary><b><code>Install Lxde Desktop</code></b></summary>
 
-![Screenshot_2024-03-17-09-22-31-146_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/d0cab67d-f069-4a79-8ef3-fd499ea6574f)
+![lxde](https://github.com/wahasa/Project/assets/69626847/d7e1579d-cd75-4151-832f-f869a892eeeb)
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
@@ -87,7 +87,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
-![Screenshot_2024-03-12-16-49-08-489_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/aab406f5-b039-4071-b8c0-0e7d4ecb52a2)
+![lxqt](https://github.com/wahasa/Project/assets/69626847/e6290702-c845-4a95-b555-65e27d36c234)
 ```
 dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
@@ -95,7 +95,7 @@ dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 
 <details><summary><b><code>Install Kde Desktop</code></b></summary>
 
-![kde](https://github.com/wahasa/Fedora/assets/69626847/f9cae4c0-669b-40f4-9200-40c64e0f2800)
+![kde](https://github.com/wahasa/Project/assets/69626847/efaf0ab7-2891-4314-bded-f9d9a25b4721)
 ```
 There is a problem
 ```
