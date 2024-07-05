@@ -30,7 +30,7 @@ cp (Name file).rpm ~/
 cd
 ```
 
-* Install Pkg
+* Install pkg
 ```
 dnf install ~/code*
 ```
