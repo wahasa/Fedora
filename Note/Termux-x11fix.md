@@ -1,28 +1,18 @@
-### Termux-x11 Fedora
-![Screenshot_2024-03-17-09-31-52-047_com termux x11](https://github.com/wahasa/Fedora/assets/69626847/e0239f45-dacd-4255-83c9-263ef393482d)
+### Termux-x11 on Fedora
+
+![TermuxX11](https://github.com/wahasa/Project/assets/69626847/07a7b273-7214-4a94-98b4-90b50b4720c0)
 
 ---
 #### Commands in Termux
 
 * Install Package
 ```
-pkg install termux-x11-nightly nano -y
+pkg install termux-x11-nightly -y
 ```
 
 * Download App Termux-x11
 
 - [x] [Link Download](https://github.com/termux/termux-x11/releases)
-
-* Edit and remove the sign (#)
-```
-nano .termux/termux.properties
-```
-
-Save : ctrl + x, click Y enter.
-
-Example :
-
-![Screenshot_2024-01-22-07-33-37-878_com termux](https://github.com/wahasa/Kali-Nethunter/assets/69626847/4dc5b01f-ea37-4b86-80c4-e8709734ea73)
 
 ---
 Add new session :</br>
@@ -95,7 +85,7 @@ In session 2 (fedora), run this command
 > Click Ctrl+c, enter (2X)
 
 In session 1 (termux), run this command
-> Click Ctrl+c, enter
+> pkill -f com.termux.x11
 </br>
 
 ---
