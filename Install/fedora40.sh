@@ -47,7 +47,7 @@ pulseaudio --start \
     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
     --exit-idle-time=-1
 cd \$(dirname \$0)
-## unset LD_PRELOAD in case termux-exec is installed
+## Unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
 command="proot"
 command+=" --kill-on-exit"
@@ -64,9 +64,9 @@ command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap"
 command+=" -b /proc"
 command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
 command+=" -b $folder/root:/dev/shm"
-## uncomment the following line to have access to the home directory of termux
+## Uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
-## uncomment the following line to mount /sdcard directly to /
+## Uncomment the following line to mount /sdcard directly to /
 command+=" -b /sdcard"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
@@ -91,14 +91,14 @@ EOM
    #echo "Removing image for some space"
    #rm $tarball
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
-echo 'bash .fedora' > $PREFIX/bin/$linux
+echo '#!/bin/bash
+bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
    echo ""
    echo "Add Fedora Package,.."
    echo ""
 echo "#!/bin/bash
-dnf update
 dnf install ncurses nano sudo -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
@@ -111,5 +111,5 @@ bash $linux
    #rm fedora40.sh
 
 #
-# Script edited by 'WaHaSa', Script V3-revision.
+## Script edited by 'WaHaSa', Script V3-revision.
 #
