@@ -1,4 +1,4 @@
-### Fixed Chromium Fedora
+### Fixed Chromium on Fedora
 ![Screenshot_2024-03-19-07-57-52-054_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/42d79753-32ff-4cc5-b520-e3fce3cfa97f)
 
 ---
@@ -10,7 +10,7 @@
 
 ---
 #### Fixed chromium can't be opened
-on Fedora, run this commands
+In Fedora, run this commands
 
 * Edit script
 ```
