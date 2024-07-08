@@ -4,13 +4,14 @@
 
 ---
 #### Commands in Termux
+> pkg install nano -y
 
 * Install Package
 ```
 pkg install termux-x11-nightly -y
 ```
 
-* Download App Termux-x11
+* App Termux-x11
 
 - [x] [Link Download](https://github.com/termux/termux-x11/releases)
 
