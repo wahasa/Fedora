@@ -1,5 +1,5 @@
 ### Fixed Chromium on Fedora
-![Screenshot_2024-03-19-07-57-52-054_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/42d79753-32ff-4cc5-b520-e3fce3cfa97f)
+![chromium](https://github.com/wahasa/Project/assets/69626847/117de597-339d-48a9-9ea0-7be2bf32d125)
 
 ---
 * Install Chromium
