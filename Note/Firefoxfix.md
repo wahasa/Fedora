@@ -1,5 +1,5 @@
 ### Fixed Firefox on Fedora
-![Screenshot_2024-03-19-07-00-51-893_com realvnc viewer android](https://github.com/wahasa/Fedora/assets/69626847/8e951f34-2a72-40f2-b5da-bc143ec4b178)
+![firefox](https://github.com/wahasa/Project/assets/69626847/1a6adff8-986b-4d10-bf7a-33cc64aae616)
 
 ---
 * Install Firefox
