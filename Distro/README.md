@@ -6,22 +6,23 @@
 
 ### Fedora Distro on Termux Android
 
-<b>Install Fedora</b>
+* Install Fedora
 ```
 pkg install proot-distro -y ; proot-distro install fedora
 ```
 
-<b>Login Fedora</b>
+* Login Fedora
 ```
 pd login fedora --shared-tmp
 ```
 
-<b>Logout Fedora</b>
+* Logout Fedora
 ```
 exit
 ```
 
-<b>Add User Name</b>
+---
+* Add User Name
 ```
 adduser wahasa
 ```
@@ -32,19 +33,19 @@ passwd wahasa
 echo "wahasa    ALL=(ALL)       ALL" >> /etc/sudoers
 ```
 
-<b>Login User Name</b>
+* Login User Name
 ```
 pd login fedora --user wahasa --shared-tmp
 ```
 
-<b>Fix Sound Output</b>
+### Fix Sound Output
 * In Termux
 ```
 nano $PREFIX/bin/fedora
 ```
 ```
 #!/bin/bash
-proot-distro login fedora --user wahasa --shared-tmp
+proot-distro login fedora --shared-tmp
 pulseaudio --start \
     --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
     --exit-idle-time=-1
@@ -57,3 +58,8 @@ chmod +x $PREFIX/bin/fedora
 ```
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
+
+---
+<p align="center">Good Luck</p>
+
+---
