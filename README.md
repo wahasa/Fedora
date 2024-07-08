@@ -36,10 +36,9 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/
 ```
 
 #### List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
-
----
 </details>
 
+---
 * Start Fedora
 ```
 fedora
