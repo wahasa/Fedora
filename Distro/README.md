@@ -59,6 +59,21 @@ chmod +x $PREFIX/bin/fedora
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
 
+* Start Fedora
+```
+fedora
+```
+
+* Stop Fedora
+```
+exit
+```
+
+* Remove Fedora
+```
+rm -rf parrot-* $PREFIX/bin/fedora
+```
+
 ---
 <p align="center">Good Luck</p>
 
