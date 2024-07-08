@@ -85,6 +85,8 @@ exit
 pd remove alpine ; rm $PREFIX/bin/fedora
 ```
 
+[Desktop Environments](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
+
 ---
 <p align="center">Good Luck</p>
 
