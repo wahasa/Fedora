@@ -11,33 +11,43 @@
 pkg install proot-distro -y ; proot-distro install fedora
 ```
 
-* Login Fedora
+* Start Fedora
 ```
 pd login fedora --shared-tmp
 ```
 
-* Logout Fedora
+* Stop Fedora
 ```
 exit
 ```
 
+* Remove Fedora
+```
+pd remove alpine
+```
+
 ---
-* Add User Name
+* Add Username
 ```
-adduser wahasa
-```
-```
-passwd wahasa
+adduser (username)
 ```
 ```
-echo "wahasa    ALL=(ALL)       ALL" >> /etc/sudoers
+passwd (username)
 ```
-
-* Login User Name
 ```
-pd login fedora --user wahasa --shared-tmp
+echo "(username)    ALL=(ALL)       ALL" >> /etc/sudoers
 ```
 
+* Login Username
+```
+pd login fedora --user (username) --shared-tmp
+```
+
+</br>
+Note :</br>
+(username) : Replace with your username.
+
+---
 ### Fix Sound Output
 * In Termux
 ```
@@ -59,6 +69,7 @@ chmod +x $PREFIX/bin/fedora
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
 
+---
 * Start Fedora
 ```
 fedora
@@ -71,7 +82,7 @@ exit
 
 * Remove Fedora
 ```
-rm -rf parrot-* $PREFIX/bin/fedora
+pd remove alpine ; rm $PREFIX/bin/fedora
 ```
 
 ---
