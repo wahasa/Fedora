@@ -95,14 +95,20 @@ pd remove alpine ; rm $PREFIX/bin/fedora
 <details><summary><b><code>Fixed Browser Crash</code></b></summary>
 </details>
 
-### Desktop Environments
+<details><summary><b><code>Install Desktop</code></b></summary>
+
 [> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
+</details>
 
-### VNC Viewer
+<details><summary><b><code>Run VNC Viewer Android</code></b></summary>
+
 [> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#vnc-viewer)
+</details>
 
-### Termux-x11
+<details><summary><b><code>Run Termux-x11 Android</code></b></summary>
+
 [> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#termux-x11)
+</details>
 </br>
 
 ---
