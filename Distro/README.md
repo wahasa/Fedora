@@ -47,6 +47,8 @@ pd login fedora --user (username) --shared-tmp
 </br>
 Note :</br>
 (username) : Replace with your username.
+
+---
 </details>
 
 <details><summary><b><code>Fix Sound Output</code></b></summary>
@@ -86,13 +88,13 @@ exit
 ```
 pd remove alpine ; rm $PREFIX/bin/fedora
 ```
+
+---
 </details>
 
 ### Desktop Environments
-<details><summary><b><code>Install Desktop</code></b></summary>
 
 [> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
-</details>
 
 ### VNC Viewer
 <details><summary><b><code>> Click Here <</code></b></summary></details>
