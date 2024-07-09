@@ -34,8 +34,6 @@ Rootfs : Armhf, Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
 ```
-
-#### List Fedora | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Install)
 </details>
 
 ---
