@@ -51,7 +51,7 @@ Note :</br>
 ---
 </details>
 
-<details><summary><b><code>Fix Sound Output</code></b></summary>
+<details><summary><b><code>Fixed Sound Output</code></b></summary>
 
 * In Termux
 ```
@@ -92,17 +92,19 @@ pd remove alpine ; rm $PREFIX/bin/fedora
 ---
 </details>
 
-<details></br><summary><b><code>Fixed Browser Crash</code></b></summary>
-</details>
-
 <details></br><summary><b><code>Install Desktop Fedora</code></b></summary>
 
 [> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
 </details>
 
+<details></br><summary><b><code>Fixed Browser Crash</code></b></summary>
+
+[> Click Here <](https://github.com/wahasa/Fedora/tree/main/Note)
+</details>
+
 <details></br><summary><b><code>Install Applications</code></b></summary>
 
-> Click Here <
+[> Click Here <](https://github.com/wahasa/Fedora/tree/main/Apps)
 </details>
 
 <details></br><summary><b><code>Run VNC Viewer Android</code></b></summary>
