@@ -93,14 +93,13 @@ pd remove alpine ; rm $PREFIX/bin/fedora
 </details>
 
 ### Desktop Environments
-
 [> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
 
 ### VNC Viewer
-<details><summary><b><code>> Click Here <</code></b></summary></details>
+[Click Here](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#vnc-viewer)
 
 ### Termux-x11
-<details><summary><b><code>> Click Here <</code></b></summary></details>
+[Click Here](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#termux-x11)
 </br>
 
 ---
