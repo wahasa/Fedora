@@ -27,7 +27,8 @@ pd remove alpine
 ```
 
 ---
-* Add Username
+<details></br><summary><b><code>Add Username</code></b></summary>
+
 ```
 adduser (username)
 ```
@@ -46,9 +47,10 @@ pd login fedora --user (username) --shared-tmp
 </br>
 Note :</br>
 (username) : Replace with your username.
+</details>
 
----
-### Fix Sound Output
+<details><summary><b><code>Fix Sound Output</code></b></summary>
+
 * In Termux
 ```
 nano $PREFIX/bin/fedora
@@ -84,6 +86,7 @@ exit
 ```
 pd remove alpine ; rm $PREFIX/bin/fedora
 ```
+</details>
 
 [Desktop Environments](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
 
