@@ -3,7 +3,6 @@
 | <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
 
 ---
-
 ### Fedora Distro on Termux Android
 
 * Install Fedora
@@ -11,6 +10,7 @@
 pkg install proot-distro -y ; proot-distro install fedora
 ```
 
+---
 * Start Fedora
 ```
 pd login fedora --shared-tmp
@@ -88,7 +88,18 @@ pd remove alpine ; rm $PREFIX/bin/fedora
 ```
 </details>
 
-[Desktop Environments](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
+### Desktop Environments
+<details><summary><b><code>Install Desktop</code></b></summary>
+
+[> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
+</details>
+
+### VNC Viewer
+<details><summary><b><code>> Click Here <</code></b></summary></details>
+
+### Termux-x11
+<details><summary><b><code>> Click Here <</code></b></summary></details>
+</br>
 
 ---
 <p align="center">Good Luck</p>
