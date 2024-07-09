@@ -29,6 +29,7 @@ pd remove alpine
 ---
 <details></br><summary><b><code>Add Username</code></b></summary>
 
+* Add Username
 ```
 adduser (username)
 ```
