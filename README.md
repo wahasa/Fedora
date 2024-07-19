@@ -29,7 +29,7 @@ Rootfs : Armhf, Arm64, Amd64
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
 ```
 
-#### List Alpine | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
+#### List Fedora | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
 </details>
 
 ---
