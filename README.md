@@ -23,17 +23,13 @@ Rootfs : Arm64, Amd64
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
-#### Fedora 40 (Container Image)
-Rootfs : Arm64, Amd64
-```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora40.sh ; chmod +x fedora40.sh ; ./fedora40.sh
-```
-
 #### Fedora 36 (Container Image)
 Rootfs : Armhf, Arm64, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
 ```
+
+#### List Alpine | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
 </details>
 
 ---
