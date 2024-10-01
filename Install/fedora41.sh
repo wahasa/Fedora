@@ -3,6 +3,7 @@ pkg install root-repo x11-repo
 pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
 fedora=41
+build=20240930
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
@@ -24,7 +25,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture"; exit 1 ;;
                 esac
-		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/layer.tar" -O $tarball
+		wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${build}.tar" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -40,6 +41,7 @@ if [ "$first" != 1 ];then
 mkdir -p $folder/binds
 bin=.fedora
 linux=fedora
+echo ""
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
@@ -82,34 +84,33 @@ else
     \$command -c "\$com"
 fi
 EOM
-   #echo "Fixing shebang of $linux"
-   termux-fix-shebang $bin
-   #echo "Making $linux executable"
-   chmod +x $bin
-   #echo "Fixing permissions for $linux"
-   chmod -R 755 $folder
-   #echo "Removing image for some space"
-   #rm $tarball
+    #echo "Fixing shebang of $linux"
+    termux-fix-shebang $bin
+    #echo "Making $linux executable"
+    chmod +x $bin
+    #echo "Fixing permissions for $linux"
+    chmod -R 755 $folder
+    #echo "Removing image for some space"
+    #rm $tarball
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo '#!/bin/bash
 bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
-   clear
-   echo ""
-   echo "Add Fedora Package,.."
-   echo ""
+    clear
+    echo ""
+    echo "Add Fedora Package,.."
+    echo ""
 echo "#!/bin/bash
-dnf install ncurses nano sudo -y
+dnf install ncurses nano sudo dialog -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
-   clear
-   echo ""
-   echo "You can login to Fedora with 'fedora' script next time"
-   echo ""
-   #rm fedora41.sh
-
-#
-## Script edited by 'WaHaSa', Script V3-revision.
-#
+    clear
+    echo ""
+    echo "You can login to Fedora with 'fedora' script next time"
+    echo ""
+    #rm fedora41.sh
+ #
+### Script edited by 'WaHaSa', Script revision-4.
+ #
