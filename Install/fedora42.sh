@@ -110,7 +110,7 @@ bash $linux
     echo ""
     echo "You can login to Fedora with 'fedora' script next time"
     echo ""
-    #rm fedora41.sh
+    #rm fedora42.sh
  #
 ### Script edited by 'WaHaSa', Script revision-4.
  #
