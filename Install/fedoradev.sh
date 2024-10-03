@@ -105,12 +105,30 @@ dnf install ncurses nano sudo dialog -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
-bash $linux
+    bash $bin
+    echo 'PRETTY_NAME="Fedora 42 (Container Image Development)"
+NAME="Fedora"
+VERSION_ID=42
+VERSION="42 Rawhide (Development)"
+VERSION_CODENAME=rawhide
+ID=fedora
+ANSI_COLOR="0;38;2;60;110;180"
+HOME_URL="https://fedoraproject.org"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US"
+SUPPORT_URL="https://ask.fedoraproject.org"
+BUG_REPORT_URL="https://bugzilla.redhat.com"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=rawhide
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=rawhide
+VARIANT="Container Image"
+VARIANT_ID=container
+LOGO=fedora-logo' > ~/"$folder"/etc/os-release
     clear
     echo ""
     echo "You can login to Fedora with 'fedora' script next time"
     echo ""
-    #rm fedora42.sh
+    #rm fedoradev.sh
  #
 ### Script edited by 'WaHaSa', Script revision-4.
  #
