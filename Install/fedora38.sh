@@ -2,7 +2,8 @@
 pkg install root-repo x11-repo
 pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
-fedora=37
+fedora=38
+build=1.6
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
@@ -16,22 +17,23 @@ if [ "$first" != 1 ];then
                 aarch64)
                         archurl="aarch64" ;;
                 #arm*)
-                #       archurl="armhf" ;;
-                ppc64le)
-                        archurl="ppc64le" ;;
-                x86_64)
+                #       archurl="armhfp" ;;
+                #ppc64le)
+                #       archurl="ppc64le" ;;
+                #x86_64)
                         archurl="x86_64" ;;
                 *)
                         echo "Unknown Architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${fedora}-${archurl}.tar.xz" -O $tarball
+		wget "https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/${fedora}/Container/${archurl}/images/Fedora-Container-Base-${fedora}-${build}.${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
 	mkdir -p $folder/binds
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
-        proot --link2symlink tar -xf ${cur}/${tarball}||:
+        proot --link2symlink tar -xf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
+        tar -xf layer.tar ; rm layer.tar
         cd "$cur"
    fi
    echo "fedora" > ~/"$folder"/etc/hostname
@@ -40,6 +42,7 @@ if [ "$first" != 1 ];then
 mkdir -p $folder/binds
 bin=.fedora
 linux=fedora
+echo ""
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
@@ -82,34 +85,50 @@ else
     \$command -c "\$com"
 fi
 EOM
-   #echo "Fixing shebang of $linux"
-   termux-fix-shebang $bin
-   #echo "Making $linux executable"
-   chmod +x $bin
-   #echo "Fixing permissions for $linux"
-   chmod -R 755 $folder
-   #echo "Removing image for some space"
-   #rm $tarball
+    #echo "Fixing shebang of $linux"
+    termux-fix-shebang $bin
+    #echo "Making $linux executable"
+    chmod +x $bin
+    #echo "Fixing permissions for $linux"
+    chmod -R 755 $folder
+    #echo "Removing image for some space"
+    #rm $tarball
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo '#!/bin/bash
 bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
-   clear
-   echo ""
-   echo "Add Fedora Package,.."
-   echo ""
+    clear
+    echo ""
+    echo "Add Fedora Package,.."
+    echo ""
 echo "#!/bin/bash
-dnf install ncurses nano sudo -y
+dnf install ncurses nano sudo dialog -y
 cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
-bash $linux
-   clear
-   echo ""
-   echo "You can login to Fedora with 'fedora' script next time"
-   echo ""
-   #rm fedora37.sh
-
-#
-## Script edited by 'WaHaSa', Script V3-revision.
-#
+    bash $bin
+    echo 'PRETTY_NAME="Fedora 38 (Container Image)"
+NAME="Fedora"
+VERSION_ID=38
+VERSION="38.1.6 (Container Image)"
+ID=fedora
+ANSI_COLOR="0;38;2;60;110;180"
+HOME_URL="https://fedoraproject.org"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US"
+SUPPORT_URL="https://ask.fedoraproject.org"
+BUG_REPORT_URL="https://bugzilla.redhat.com"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=rawhide
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=rawhide
+VARIANT="Container Image"
+VARIANT_ID=container
+LOGO=fedora-logo' > ~/"$folder"/etc/os-release
+    clear
+    echo ""
+    echo "You can login to Fedora with 'fedora' script next time"
+    echo ""
+    #rm fedora38.sh
+ #
+### Script edited by 'WaHaSa', Script revision-4.
+ #
