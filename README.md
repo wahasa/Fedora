@@ -1,19 +1,18 @@
-
 <p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
 ## Fedora on Termux Android
-![Fedora](https://github.com/user-attachments/assets/66951b7c-9cbf-43c4-aa88-e7dab9f927c5)
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Fedora.jpg">
 
----
-• Install Apps on Android
+* Install Apps on Android
 - [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
-- [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
+- [x] [Termux-x11](https://github.com/termux/termux-x11/releases)
 
-## Installation
+### Installation
+
 Copy and paste this commands to Termux
-> pkg update
+> apt update
 
 <details><summary><b><code>Install Fedora</code></b></summary>
 
