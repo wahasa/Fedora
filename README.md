@@ -16,33 +16,34 @@ Copy and paste this commands to Termux
 
 <details><summary><b><code>Install Fedora</code></b></summary>
 
+> apt install wget
 #### Fedora 41 (Pre-release)
 Rootfs : Arm64, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
 #### Fedora 36 (Container Image)
 Rootfs : Armhf, Arm64, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
 ```
 
 #### List Fedora | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
 </details>
 
 ---
-* Start Fedora
+* Login Fedora
 ```
 fedora
 ```
 
-* Stop Fedora
+* Logout Fedora
 ```
 exit
 ```
 
-* Delete Fedora
+* Remove Fedora
 ```
 chmod -R 775 fedora-fs ; rm -rf fedora-fs .fedora $PREFIX/bin/fedora
 ```
@@ -54,98 +55,57 @@ Basic commands Fedora
 > dnf search (pkg) : Search package.</br>
 > dnf install (pkg) : Install package.</br>
 > dnf autoremove (pkg) : Delete pkg.</br>
-> dnf -h : Help all commands.
 
 ---
-## Desktop Environments
+### Install Desktop Environments
 In Fedora, run this commands
 > dnf update
 
-<details><summary><b><code>Install Xfce Desktop</code></b></summary>
+<details><summary><b><code>Xfce Desktop</code></b></summary></br>
 
-![xfce](https://github.com/wahasa/Project/assets/69626847/8a5d72d8-d08b-491f-a209-80e2fa68786a)
 ```
-dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
+dnf install @xfce-desktop-environment tigervnc-server dbus -y
+```
+```
+dnf install xfburn parole ristretto gst-libav -y
 ```
 </details>
 
-<details><summary><b><code>Install Lxde Desktop</code></b></summary>
+<details><summary><b><code>Lxde Desktop</code></b></summary></br>
 
-![lxde](https://github.com/wahasa/Project/assets/69626847/d7e1579d-cd75-4151-832f-f869a892eeeb)
 ```
-dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
+dnf install @lxde-desktop-environment tigervnc-server dbus -y
+```
+```
+mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
 ```
 </details>
 
-<details><summary><b><code>Install Lxqt Desktop</code></b></summary>
+<details><summary><b><code>Lxqt Desktop</code></b></summary></br>
 
-![lxqt](https://github.com/wahasa/Project/assets/69626847/e6290702-c845-4a95-b555-65e27d36c234)
 ```
-dnf install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
+dnf install @lxqt-desktop-environment tigervnc-server dbus -y
 ```
 </details>
 
-<details><summary><b><code>Install Kde Desktop</code></b></summary>
+<details><summary><b><code>Kde- Desktop</code></b></summary></br>
 
-![kde](https://github.com/wahasa/Project/assets/69626847/efaf0ab7-2891-4314-bded-f9d9a25b4721)
-```
-There is a problem
-```
+~~dnf install @kde-desktop-environment tigervnc-server dbus -y~~
 </details>
 
 ---
 Feature
-- [x] Fixed Sound
+- [x] Fixed Sound Output
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Note)
-- [x] Install Applications | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Apps)
+- [x] Add New Username | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/AddUser.md)
+- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Apps/Firefoxfix.md#fixed-firefox-crash)
+- [x] Install Applications | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Apps#list-applications)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
 ---
-## VNC Viewer
-<details></br>
-<summary><b><code>VNC Viewer Android</code></b></summary>
 
-* Start VNC Server
-
-In Fedora, run this command to start
-```
-vnc-start
-```
-
-* Open Vnc Viewer
-
-Add (+) VNC Client to connect, fill with :
-
-Address
-```
-localhost:1
-```
-
-Name
-```
-Fedora Desktop
-```
-
-To disconnect VNC Client, click (X) on the right.
-
-* Stop VNC Server
-
-In Fedora, run this command to stop
-```
-vnc-stop
-```
-</details>
-
----
-## Termux-x11
-<details></br>
-<summary><b><code>Termux-x11 Android</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Fedora/blob/main/Note/Termux-x11fix.md)
-</details>
 </br>
 
 ---
