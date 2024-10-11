@@ -105,7 +105,10 @@ Feature
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
 ---
-
+### Run Desktop Environment
+- [x] With Termux-X11  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/Termux-X11.md#termux-x11)
+- [x] With Rvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/RvncViewer.md#rvnc-viewer)
+- [x] With Bvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/BvncViewer.md#bvnc-viewer)
 </br>
 
 ---
