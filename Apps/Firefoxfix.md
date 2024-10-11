@@ -1,12 +1,14 @@
-### Fixed Firefox on Fedora
-![firefox](https://github.com/wahasa/Project/assets/69626847/1a6adff8-986b-4d10-bf7a-33cc64aae616)
+<p align="center">My Channel</br><b>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
+### Fixed Firefox on Fedora
+
 * Install Firefox
-> dnf install firefox-esr -y
+> dnf install firefox-esr
 
 * Uninstall Firefox
-> dnf autoremove firefox-esr -y
+> dnf autoremove firefox-esr
 
 ---
 #### Fixed firefox crash
@@ -40,4 +42,3 @@ Click edit on the right, change the number '4' to '0' and press again to save.
 <p align="center">Good Luck</p>
 
 ---
-
