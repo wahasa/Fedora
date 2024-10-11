@@ -7,12 +7,22 @@
 In Linux, run this commands
 > dnf install wget nano
 
-- [x] [Link Download](https://code.visualstudio.com/download)
+Arm32 (Armv7/6/Armhf)
+```
+wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/384ff7382de624fb94dbaf6da11977bba1ecd427/code-1.94.2-1728493091.el8.armv7hl.rpm
+```
 
-Note :</br>
-• X64 (X86_64/Amd64)</br>
-• Arm32 (Armv7/6/Armhf)</br>
-• Arm64 (Aarch64/Armv8)
+Arm64 (Aarch64/Armv8)
+```
+wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/384ff7382de624fb94dbaf6da11977bba1ecd427/code-1.94.2-1728493173.el8.aarch64.rpm
+```
+
+X64 (X86_64/Amd64)
+```
+wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/384ff7382de624fb94dbaf6da11977bba1ecd427/code-1.94.2-1728494086.el8.x86_64.rpm
+```
+
+- [x] List File | [Click Hare >](https://code.visualstudio.com/download)
 
 ---
 * Install pkg
