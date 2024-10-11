@@ -14,7 +14,7 @@
 Copy and paste this commands to Termux
 > apt update
 
-<details><summary><b><code>Install Fedora</code></b></summary>
+<details><summary><b><code>Install Fedora</code></b></summary></br>
 
 > apt install wget
 #### Fedora 41 (Pre-release)
@@ -23,7 +23,7 @@ Rootfs : Arm64, Amd64
 wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
-#### Fedora 36 (Container Image)
+#### Fedora 36 (Old-release)
 Rootfs : Armhf, Arm64, Amd64
 ```
 wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
@@ -98,17 +98,17 @@ Feature
 - [x] Fixed Sound Output
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Add New Username | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/AddUser.md)
-- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Apps/Firefoxfix.md#fixed-firefox-crash)
+- [x] Add New Username     | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/AddUser.md#add-username-on-alpine)
+- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Apps/Firefoxfix.md#fixed-firefox-on-alpine)
 - [x] Install Applications | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Apps#list-applications)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
 ---
 ### Run Desktop Environment
-- [x] With Termux-X11  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/Termux-X11.md#termux-x11)
-- [x] With Rvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/RvncViewer.md#rvnc-viewer)
-- [x] With Bvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/BvncViewer.md#bvnc-viewer)
+- [x] With Termux-X11  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/Termux-X11.md#termux-x11-on-alpine)
+- [x] With Rvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/RvncViewer.md#rvnc-viewer-on-alpine)
+- [x] With Bvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/BvncViewer.md#bvnc-viewer-on-alpine)
 </br>
 
 ---
