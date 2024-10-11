@@ -1,5 +1,7 @@
+<p align="center">My Channel</br><b>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
+
 ### Visual Studio Code on Fedora
-![Screenshot_2024-03-19-09-51-51-880_com realvnc viewer android](https://github.com/wahasa/Parrot/assets/69626847/30b7bdaa-78d7-4b04-91bd-a8e4713fec43)
 
 Requirements
 - [x] Linux can access Sdcard
