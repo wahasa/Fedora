@@ -37,7 +37,7 @@ Swipe the screen from left to right in termux, click 'New Session'.
 
 ---
 Commands in Linux (session 2)
-> apk add nano
+> dnf install nano
 
 - Edit script
 ```
