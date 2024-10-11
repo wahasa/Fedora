@@ -1,15 +1,16 @@
-### Fixed Chromium on Fedora
-![chromium](https://github.com/wahasa/Project/assets/69626847/117de597-339d-48a9-9ea0-7be2bf32d125)
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
+### Fixed Chromium on Fedora
+
 * Install Chromium
-> dnf install chromium -y
+> dnf install chromium
 
 * Uninstall Chromium
-> dnf remove chromium -y
+> dnf remove chromium
 
 ---
-#### Fixed chromium can't be opened
+#### Fixed chromium not opening
 In Fedora, run this commands
 
 * Edit script
@@ -25,8 +26,11 @@ Exec=/usr/bin/chromium-browser --no sandbox --test-type %U
 Save : ctrl + x, click Y enter.
 
 Example :
+> Exec=/usr/bin/chromium --test-type %U
 
-![Screenshot_2024-03-19-08-03-33-865_com termux](https://github.com/wahasa/Fedora/assets/69626847/8f0794b1-d40f-4e3e-bbdf-a31075ba6c02)
+To
+
+> Exec=/usr/bin/chromium --no-sandbox --test-type %U
 
 * You can open chromium now.
 </br>
