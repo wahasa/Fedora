@@ -1,5 +1,12 @@
 ### List Applications
 
+<details><summary><code><b>Blender</b></code></summary></br>
+
+```
+dnf install blender
+```
+</details>
+
 <details><summary><code><b>Chromium</b></code></summary></br>
 
 [> Click Here <](https://github.com/wahasa/Fedora/blob/main/Apps/Chromiumfix.md#fixed-chromium-on-fedora)
