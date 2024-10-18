@@ -106,10 +106,10 @@ cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
     bash $bin
-    echo 'PRETTY_NAME="Fedora 41 (Container Image Prerelease)"
+    echo 'PRETTY_NAME="Fedora 41 (Container Image)"
 NAME="Fedora"
 VERSION_ID=41
-VERSION="41 (Prerelease)"
+VERSION="41 (Container Image)"
 ID=fedora
 ANSI_COLOR="0;38;2;60;110;180"
 HOME_URL="https://fedoraproject.org"
