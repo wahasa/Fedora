@@ -32,15 +32,15 @@ if [ "$first" != 1 ];then
         cur=`pwd`
         mkdir -p "$folder"
 	mkdir -p $folder/binds
-        #cd "$folder"
+        cd "$folder"
 	echo "Decompressing Rootfs, please be patient."
-        proot --link2symlink \
-          tar --warning=no-unknown-keyword \
-              --delay-directory-restore --preserve-permissions \
-              -xzpf ~/${tarball} -C ~/$folder/ --strip-components=1 --exclude json --exclude VERSION --exclude='dev'||:
-	#proot --link2symlink tar -xzpf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION --exclude='dev'||:
-        tar -xzpf layer.tar ; rm layer.tar
-	#cd "$cur"
+        #proot --link2symlink \
+        #  tar --warning=no-unknown-keyword \
+        #      --delay-directory-restore --preserve-permissions \
+        #      -xpf ~/${tarball} -C ~/$folder/ --strip-components=1 --exclude json --exclude VERSION --exclude='dev'||:
+	proot --link2symlink tar -xpf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION --exclude='dev'||:
+        tar -xpf layer.tar ; rm layer.tar
+	cd "$cur"
 	fi
      echo "localhost" > ~/$folder/etc/hostname
      echo "127.0.0.1 localhost" > ~/"$folder"/etc/hosts
