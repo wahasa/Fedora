@@ -21,17 +21,17 @@ if [ "$first" != 1 ];then
                arm*)
                        archurl="armhfp" ;;
                #i386)
-		                 archurl="x86" ;;
+		       archurl="x86" ;;
                x86_64)
                        archurl="x86_64" ;;
                *)
                        echo "Unknown Architecture."; exit 1 ;;
                esac
-		         wget -q --show-progress "https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/${fedora}/Container/${archurl}/images/Fedora-Container-Base-${fedora}-${build}.${archurl}.tar.xz" -O $tarball
+	       wget -q --show-progress "https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/${fedora}/Container/${archurl}/images/Fedora-Container-Base-${fedora}-${build}.${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
-	     mkdir -p $folder/binds
+	mkdir -p $folder/binds
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xpf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
@@ -139,6 +139,6 @@ LOGO=fedora-logo' > ~/"$folder"/etc/os-release
     echo "You can login to Fedora with 'fedora' script next time"
     echo ""
     #rm fedora36.sh
-#
-## Script edited by 'WaHaSa', Script revision-5.
-##
+ #
+### Script edited by 'WaHaSa', Script revision-5.
+ ##
