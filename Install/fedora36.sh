@@ -4,8 +4,8 @@ pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 fedora=36
 build=1.5
-clear
-neofetch --ascii_distro Fedora -L
+    echo ""
+    neofetch --ascii_distro Fedora -L
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
@@ -35,7 +35,7 @@ if [ "$first" != 1 ];then
         cd "$folder"
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xpf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION --exclude='dev'||:
-        tar -xpf layer.tar ; rm layer.tar
+        tar -xpf layer.tar
         cd "$cur"
    fi
    echo "localhost" > $folder/etc/hostname
@@ -88,6 +88,7 @@ command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/us
 command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
 command+=" LC_ALL=C"
+command+=" LANGUAGE=en_US"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
@@ -104,14 +105,16 @@ EOM
     echo "Fixing permissions for $linux"
     chmod -R 755 $folder
     echo "Removing image for some space"
+    rm -rf $folder/layer.tar
     #rm $tarball
+echo ""
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
 echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
     clear
     echo ""
-    echo "Add Fedora Package,.."
+    echo "Checking Packages,.."
     echo ""
 echo "#!/bin/bash
 touch ~/.hushlogin
