@@ -105,7 +105,7 @@ echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
      clear
      echo ""
-     echo "Checking Packages,.."
+     echo "Checking Package,.."
      echo ""
 echo "#!/bin/bash
 touch ~/.hushlogin
