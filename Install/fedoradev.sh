@@ -14,20 +14,20 @@ fi
 tarball="fedora-rootfs.tar"
 if [ "$first" != 1 ];then
          if [ ! -f $tarball ]; then
-                 echo "Download Rootfs, this may take a while base on your internet speed."
-                 case `dpkg --print-architecture` in
-                 aarch64)
-                         archurl="aarch64" ;;
-                 #arm*)
-                         #archurl="armhfp" ;;
-                 #i386)
-		         #archurl="x86" ;;
-                 x86_64)
-                         archurl="x86_64" ;;
-                 *)
-                         echo "Unknown Architecture."; exit 1 ;;
-                 esac
-		 wget -q --show-progress "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${build}.tar" -O $tarball
+               echo "Download Rootfs, this may take a while base on your internet speed."
+               case `dpkg --print-architecture` in
+               aarch64)
+                       archurl="aarch64" ;;
+               #arm*)
+                       #archurl="armhfp" ;;
+               #i386)
+		       #archurl="x86" ;;
+               x86_64)
+                       archurl="x86_64" ;;
+               *)
+                       echo "Unknown Architecture."; exit 1 ;;
+               esac
+	       wget -q --show-progress "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${build}.tar" -O $tarball
 	 fi
          mkdir -p $folder
 	 mkdir -p $folder/binds
