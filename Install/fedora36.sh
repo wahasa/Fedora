@@ -34,7 +34,6 @@ if [ "$first" != 1 ];then
          echo "Decompressing Rootfs, please be patient."
 	 proot --link2symlink tar -xpf ~/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
          proot --link2symlink tar -xpf ~/layer.tar -C ~/$folder/ --exclude='dev'||:
-	 rm -rf layer.tar
     fi
     echo "localhost" > $folder/etc/hostname
     echo "127.0.0.1 localhost" > $folder/etc/hosts
@@ -100,7 +99,7 @@ EOM
      echo "Fixing permissions for $linux"
      chmod -R 755 $folder
      echo "Removing image for some space"
-     rm $tarball
+     rm $tarball layer.tar
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
 echo 'bash .fedora' > $PREFIX/bin/$linux
@@ -116,6 +115,7 @@ cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $bin
+bash $bin rpm -e --nodeps filesystem
      clear
      echo ""
      echo "You can login to Fedora with 'fedora' script next time"
