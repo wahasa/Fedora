@@ -112,10 +112,10 @@ echo "#!/bin/bash
 touch ~/.hushlogin
 dnf install dialog nano sudo ncurses tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
+#rpm -e --nodeps filesystem
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $bin
-bash $bin rpm -e --nodeps filesystem
      clear
      echo ""
      echo "You can login to Fedora with 'fedora' script next time"
