@@ -4,8 +4,8 @@ pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 fedora=42
 build=20241117
-    echo ""
-    neofetch --ascii_distro Fedora -L
+   echo ""
+   neofetch --ascii_distro Fedora -L
 folder=fedora-fs
 if [ -d "$folder" ]; then
         first=1
@@ -13,34 +13,30 @@ if [ -d "$folder" ]; then
 fi
 tarball="fedora-rootfs.tar"
 if [ "$first" != 1 ];then
-        if [ ! -f $tarball ]; then
-                echo "Download Rootfs, this may take a while base on your internet speed."
-                case `dpkg --print-architecture` in
-                aarch64)
-                        archurl="aarch64" ;;
-                #arm*)
-                        #archurl="armhfp" ;;
-                #i386)
-		        #archurl="x86" ;;
-                x86_64)
-                        archurl="x86_64" ;;
-                *)
-                        echo "Unknown Architecture."; exit 1 ;;
-                esac
-		wget -q --show-progress "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${build}.tar" -O $tarball
-        fi
-        cur=`pwd`
-        mkdir -p $folder
-	mkdir -p $folder/binds
-        cd "$folder"
-        echo "Decompressing Rootfs, please be patient."
-        proot --link2symlink tar -xpf ${cur}/${tarball} --strip-components=1 --exclude json --exclude VERSION --exclude='dev'||:
-	#tar -xpf layer.tar
-        cd "$cur"
-   fi
-   echo "localhost" > $folder/etc/hostname
-   echo "127.0.0.1 localhost" > $folder/etc/hosts
-   echo "nameserver 8.8.8.8" > $folder/etc/resolv.conf
+         if [ ! -f $tarball ]; then
+                 echo "Download Rootfs, this may take a while base on your internet speed."
+                 case `dpkg --print-architecture` in
+                 aarch64)
+                         archurl="aarch64" ;;
+                 #arm*)
+                         #archurl="armhfp" ;;
+                 #i386)
+		         #archurl="x86" ;;
+                 x86_64)
+                         archurl="x86_64" ;;
+                 *)
+                         echo "Unknown Architecture."; exit 1 ;;
+                 esac
+		 wget -q --show-progress "https://github.com/fedora-cloud/docker-brew-fedora/raw/${fedora}/${archurl}/fedora-${build}.tar" -O $tarball
+	 fi
+         mkdir -p $folder
+	 mkdir -p $folder/binds
+         echo "Decompressing Rootfs, please be patient."
+         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
+    fi
+    echo "localhost" > $folder/etc/hostname
+    echo "127.0.0.1 localhost" > $folder/etc/hosts
+    echo "nameserver 8.8.8.8" > $folder/etc/resolv.conf
 bin=.fedora
 linux=fedora
 echo ""
@@ -58,9 +54,9 @@ command+=" --link2symlink"
 command+=" -0"
 command+=" -r $folder"
 if [ -n "\$(ls -A $folder/binds)" ]; then
-    for f in $folder/binds/* ;do
-      . \$f
-    done
+   for f in $folder/binds/* ;do
+       . \$f
+   done
 fi
 command+=" -b /dev"
 command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap"
@@ -73,7 +69,6 @@ command+=" -b /proc/self/fd/1:/dev/stdout"
 command+=" -b /proc/self/fd/2:/dev/stderr"
 command+=" -b /sys"
 command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
-command+=" -b $folder/tmp:/dev/shm"
 command+=" -b $folder/root:/dev/shm"
 ## Uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
@@ -83,51 +78,48 @@ command+=" -b /mnt"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
 command+=" HOME=/root"
-command+=" PATH=/bin:/usr/bin:/sbin:/usr/sbin"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/games:/usr/local/games"
 command+=" TERM=\$TERM"
-command+=" LANG=C.UTF-8"
 command+=" LC_ALL=C"
-command+=" LANGUAGE=en_US"
+command+=" LANG=C.UTF-8"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
-    exec \$command
+   exec \$command
 else
-    \$command -c "\$com"
+   \$command -c "\$com"
 fi
 EOM
-    echo ""
-    echo "Fixing shebang of $linux"
-    termux-fix-shebang $bin
-    echo "Making $linux executable"
-    chmod +x $bin
-    echo "Fixing permissions for $linux"
-    chmod -R 755 $folder
-    echo "Removing image for some space"
-    #rm -rf $folder/layer.tar
-    #rm $tarball
-echo ""
+     echo ""
+     echo "Fixing shebang of $linux"
+     termux-fix-shebang $bin
+     echo "Making $linux executable"
+     chmod +x $bin
+     echo "Fixing permissions for $linux"
+     chmod -R 755 $folder
+     echo "Removing image for some space"
+     #rm -rf $folder/layer.tar
+     #rm $tarball
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
 echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
-    clear
-    echo ""
-    echo "Checking Packages,.."
-    echo ""
+     clear
+     echo ""
+     echo "Checking Packages,.."
+     echo ""
 echo "#!/bin/bash
 touch ~/.hushlogin
 dnf install dialog nano sudo ncurses tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
-    bash $bin
-    clear
-    echo ""
-    echo "You can login to Fedora with 'fedora' script next time"
-    echo ""
-    #rm fedoradev.sh
- #
-### Script edited by 'WaHaSa', Script revision-5.
- ##
+bash $bin
+     clear
+     echo ""
+     echo "You can login to Fedora with 'fedora' script next time"
+     echo ""
+     #rm fedoradev.sh
+#
+## Script edited by 'WaHaSa', Script revision-5.
+##
