@@ -98,8 +98,7 @@ EOM
      echo "Fixing permissions for $linux"
      chmod -R 755 $folder
      echo "Removing image for some space"
-     #rm -rf $folder/layer.tar
-     #rm $tarball
+     rm $tarball
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
 echo 'bash .fedora' > $PREFIX/bin/$linux
