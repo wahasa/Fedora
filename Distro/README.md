@@ -85,7 +85,7 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ---
 </details>
 
-<details><summary><b><code>Add Username Fedora</code></b></summary></br>
+<details><summary><b><code>Add Username Distro</code></b></summary></br>
 
 In Linux, run this commands
 > dnf install sudo
@@ -105,6 +105,7 @@ echo "<username>    ALL=(ALL)       ALL" >> /etc/sudoers
 Note :</br>
 (username) : Replace with your username.
 
+---
 In Termux, run this commands
 > apt install nano
 
@@ -115,7 +116,6 @@ nano $PREFIX/bin/fedora
 - Edit Script
 
 > proot-distro login --user <username> fedora --shared-tmp
-
 Save : ctrl + x, click y enter.
 
 ---
