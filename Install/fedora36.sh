@@ -18,8 +18,8 @@ if [ "$first" != 1 ];then
                case `dpkg --print-architecture` in
                aarch64)
                        archurl="aarch64" ;;
-               #arm*)
-                       #archurl="armhfp" ;;
+               arm*)
+                       archurl="armhfp" ;;
                #i386)
 		       #archurl="x86" ;;
                x86_64)
