@@ -78,9 +78,10 @@ In Fedora, run this command
 ```
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
-</details>
 
 ---
+</details>
+
 - [x] [Install Desktop Environments](https://github.com/wahasa/Fedora/tree/main#install-desktop-environments)
 
 - [x] [Run Desktop Environments](https://github.com/wahasa/Fedora/tree/main#run-desktop-environments)
