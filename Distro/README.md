@@ -85,6 +85,52 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ---
 </details>
 
+<details><summary><b><code>Add Username Fedora</code></b></summary></br>
+
+In Linux, run this commands
+> dnf install sudo
+
+- Add Username
+```
+adduser <username>
+```
+```
+passwd <username>
+```
+```
+echo "<username>    ALL=(ALL)       ALL" >> /etc/sudoers
+```
+
+</br>
+Note :</br>
+(username) : Replace with your username.
+
+In Termux, run this commands
+> apt install nano
+
+```
+nano $PREFIX/bin/fedora
+```
+
+- Edit Script
+
+> proot-distro login --user <username> fedora --shared-tmp
+
+Save : ctrl + x, click y enter.
+
+---
+- Login Fedora
+> fedora
+
+- Logout Fedora
+> exit
+
+- Remove Fedora
+> rm $PREFIX/bin/fedora
+
+---
+</details>
+
 - [x] [Install Desktop Environments](https://github.com/wahasa/Fedora/tree/main#install-desktop-environments)
 
 - [x] [Run Desktop Environments](https://github.com/wahasa/Fedora/tree/main#run-desktop-environments)
