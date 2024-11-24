@@ -73,6 +73,9 @@ chmod +x $PREFIX/bin/fedora
 - Logout Fedora
 > exit
 
+- Remove Fedora
+> rm $PREFIX/bin/fedora
+
 ---
 In Fedora, run this command
 ```
