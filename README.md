@@ -18,6 +18,7 @@ Copy and paste this commands to Termux
 
 > apt install wget
 - [x] Fedora 41 (Latest-release)
+
 Rootfs : Arm64, Amd64
 ```
 wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
