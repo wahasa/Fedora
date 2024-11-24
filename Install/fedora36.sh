@@ -8,8 +8,8 @@ build=1.5
    neofetch --ascii_distro Fedora -L
 folder=fedora-fs
 if [ -d "$folder" ]; then
-        first=1
-        echo "Skipping Downloading."
+         first=1
+         echo "Skipping Downloading."
 fi
 tarball="fedora-rootfs.tar.xz"
 if [ "$first" != 1 ];then
