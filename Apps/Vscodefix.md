@@ -9,17 +9,17 @@ In Linux, run this commands
 
 Arm32 (Armv7/6/Armhf)
 ```
-wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/384ff7382de624fb94dbaf6da11977bba1ecd427/code-1.94.2-1728493091.el8.armv7hl.rpm
+wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/code-1.95.3-1731512114.el8.armv7hl.rpm
 ```
 
 Arm64 (Aarch64/Armv8)
 ```
-wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/384ff7382de624fb94dbaf6da11977bba1ecd427/code-1.94.2-1728493173.el8.aarch64.rpm
+wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/code-1.95.3-1731512119.el8.aarch64.rpm
 ```
 
 X64 (X86_64/Amd64)
 ```
-wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/384ff7382de624fb94dbaf6da11977bba1ecd427/code-1.94.2-1728494086.el8.x86_64.rpm
+wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/code-1.95.3-1731513157.el8.x86_64.rpm
 ```
 
 - [x] List File | [Click Hare >](https://code.visualstudio.com/download)
