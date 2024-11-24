@@ -1,5 +1,4 @@
 <p align="center">My Channel</br><b>
-| <a <p align="center">My Channel</br><b>
 | <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
@@ -149,7 +148,10 @@ pd remove alpine ; rm $PREFIX/bin/fedora
 ---
 </details>
 
-<details></br><summary><b><code>Install 
+---
+- [x] [Install Desktop Environments](https://github.com/wahasa/Fedora/tree/main#install-desktop-environments)
+
+- [x] [Run Desktop Environments](https://github.com/wahasa/Fedora/tree/main#run-desktop-environments)
 </br>
 
 ---
