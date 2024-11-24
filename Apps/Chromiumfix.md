@@ -14,7 +14,7 @@
 #### Fixed chromium not opening
 
 In Fedora, run this commands
-dnf install nano
+> dnf install nano
 
 * Edit script
 ```
