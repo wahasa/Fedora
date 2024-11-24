@@ -114,8 +114,9 @@ nano $PREFIX/bin/fedora
 ```
 
 - Edit Script
-
-> proot-distro login --user <username> fedora --shared-tmp
+```
+proot-distro login --user <username> fedora --shared-tmp
+```
 
 Save : ctrl + x, click y enter.
 
