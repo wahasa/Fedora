@@ -17,14 +17,6 @@ passwd <username>
 ```
 echo "<username>    ALL=(ALL)       ALL" >> /etc/sudoers
 ```
-```
-su <username>
-```
-
-- Del Username
-```
-deluser <username>
-```
 
 </br>
 Note :</br>
@@ -39,6 +31,11 @@ su <username>
 - Logout Username
 ```
 exit
+```
+
+- Remove Username
+```
+deluser <username>
 ```
 </br>
 
