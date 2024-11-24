@@ -17,19 +17,26 @@ Copy and paste this commands to Termux
 <details><summary><b><code>Install Fedora</code></b></summary></br>
 
 > apt install wget
-#### Fedora 41 (Latest)
+- [x] Fedora 41 (Latest-release)
 Rootfs : Arm64, Amd64
 ```
 wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
 ```
 
-#### Fedora 36 (Old)
+- [x] Fedora 36 (Old-release)
+
 Rootfs : Armhf, Arm64, Amd64
 ```
 wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
 ```
+- [x] Fedora 42 (Development)
 
-#### List Fedora | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
+Rootfs : Arm64, Amd64
+```
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedoradev.sh ; chmod +x fedoradev.sh ; ./fedoradev.sh
+```
+
+- [x] List Fedora | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
 </details>
 
 ---
