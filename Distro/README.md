@@ -1,30 +1,42 @@
 
 <p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
+| <a <p align="center">My Channel</br><b>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
 ### Fedora Distro on Termux Android
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Fedora.jpg">
 
-* Install Fedora
+* Install Apps on Android
+- [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
+- [x] [Termux-x11](https://github.com/termux/termux-x11/releases)
+
+### Installation
+Copy and paste this commands to Termux
+
+Install Fedora (Distro)
+> apt update
+
 ```
-pkg install proot-distro -y ; proot-distro install fedora
+apt install proot-distro -y ; proot-distro install fedora
 ```
+
+* Login Fedora
+> proot-distro login fedora
+* Logout Fedora
+> exit
 
 ---
-* Start Fedora
-```
-pd login fedora --shared-tmp
-```
+- Reinstall : proot-distro reset fedora
+- Uninstall : proot-distro remove fedora
 
-* Stop Fedora
-```
-exit
-```
-
-* Remove Fedora
-```
-pd remove alpine
-```
+---
+Basic commands Fedora
+> dnf update : Update list package.</br>
+> dnf upgrade : Upgrade package.</br>
+> dnf search (pkg) : Search package.</br>
+> dnf install (pkg) : Install package.</br>
+> dnf autoremove (pkg) : Delete pkg.</br>
 
 ---
 <details></br><summary><b><code>Add Username</code></b></summary>
@@ -93,30 +105,7 @@ pd remove alpine ; rm $PREFIX/bin/fedora
 ---
 </details>
 
-<details></br><summary><b><code>Install Desktop Fedora</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#desktop-environments)
-</details>
-
-<details></br><summary><b><code>Fixed Browser Crash</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Fedora/tree/main/Note)
-</details>
-
-<details></br><summary><b><code>Install Applications</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Fedora/tree/main/Apps)
-</details>
-
-<details></br><summary><b><code>Run VNC Viewer Android</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#vnc-viewer)
-</details>
-
-<details></br><summary><b><code>Run Termux-x11 Android</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Fedora/tree/main?tab=readme-ov-file#termux-x11)
-</details>
+<details></br><summary><b><code>Install 
 </br>
 
 ---
