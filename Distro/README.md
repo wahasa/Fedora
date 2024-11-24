@@ -116,17 +116,8 @@ nano $PREFIX/bin/fedora
 - Edit Script
 
 > proot-distro login --user <username> fedora --shared-tmp
+
 Save : ctrl + x, click y enter.
-
----
-- Login Fedora
-> fedora
-
-- Logout Fedora
-> exit
-
-- Remove Fedora
-> rm $PREFIX/bin/fedora
 
 ---
 </details>
