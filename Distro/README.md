@@ -1,4 +1,3 @@
-
 <p align="center">My Channel</br><b>
 | <a <p align="center">My Channel</br><b>
 | <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
@@ -39,6 +38,51 @@ Basic commands Fedora
 > dnf autoremove (pkg) : Delete pkg.</br>
 
 ---
+Feature
+
+<details><summary><b><code>Fixed Sound Output</code></b></summary></br>
+
+In Termux, run this commands
+> apt update
+
+```
+apt install pulseaudio nano -y
+```
+```
+nano $PREFIX/bin/fedora
+```
+
+- Copy Script
+```
+#!/bin/bash
+pulseaudio --start \
+    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
+    --exit-idle-time=-1
+proot-distro login fedora --shared-tmp
+```
+Save : ctrl + x, click y enter.
+
+- Activate script
+```
+chmod +x $PREFIX/bin/fedora
+```
+
+---
+- Login Fedora
+> fedora
+
+- Logout Fedora
+> exit
+
+---
+In Fedora, run this command
+```
+echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
+```
+
+---
+</details>
+
 <details></br><summary><b><code>Add Username</code></b></summary>
 
 * Add Username
