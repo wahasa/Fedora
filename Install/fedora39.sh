@@ -3,7 +3,7 @@ pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 fedora=39
-build=20241117
+build=2024
    echo ""
    neofetch --ascii_distro Fedora -L
 folder=fedora-fs
