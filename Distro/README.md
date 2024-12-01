@@ -90,7 +90,7 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 
 <details><summary><b><code>Add New Username</code></b></summary></br>
 
-In Linux, run this commands
+<b>In Linux, run this commands</b>
 > dnf install sudo
 
 - Add Username
