@@ -12,7 +12,7 @@
 ### Installation
 Copy and paste this commands to Termux
 
-Install Fedora (Distro)
+- [x] Install Fedora (Distro)
 > apt update
 
 ```
@@ -41,7 +41,7 @@ Feature
 
 <details><summary><b><code>Fixed Sound Output</code></b></summary></br>
 
-In Termux, run this commands
+<b>In Termux, run this commands</b>
 > apt update
 
 ```
@@ -77,7 +77,7 @@ chmod +x $PREFIX/bin/fedora
 > rm $PREFIX/bin/fedora
 
 ---
-In Fedora, run this command
+<b>In Fedora, run this command</b>
 ```
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
@@ -106,23 +106,58 @@ Note :</br>
 (username) : Replace with your username.
 
 ---
-In Termux, run this commands
-> apt install nano
+- Login Username
+```
+su <username>
+```
 
+- Logout Username
 ```
-nano $PREFIX/bin/fedora
+exit
 ```
+
+- Remove Username
+```
+deluser <username>
+```
+
+---
+<b>In Termux, run this commands</b>
+> apt install nano
 
 - Edit Script
 ```
-pd login --user <username> fedora --shared-tmp
+nano $PREFIX/bin/fedora
 ```
+</br>
 
+> proot-distro login fedora --shared-tmp
+
+To
+
+```
+proot-distro login --user <username> fedora --shared-tmp
+```
 Save : ctrl + x, click y enter.
 
+</br>
+Note :</br>
+(username) : Replace with your username.
+
 ---
+- Login Fedora
+> fedora
+
+- Logout Fedora
+> exit
+
+- Remove Fedora
+```
+rm $PREFIX/bin/fedora ; pd remove fedora
+```
 </details>
 
+---
 - [x] [Install Desktop Environments](https://github.com/wahasa/Fedora/tree/main#install-desktop-environments)
 
 - [x] [Run Desktop Environments](https://github.com/wahasa/Fedora/tree/main#run-desktop-environments)
