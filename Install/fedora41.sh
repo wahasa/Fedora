@@ -2,10 +2,10 @@
 pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
+echo ""
 fedora=41
-build=20241117
-   echo ""
-   neofetch --ascii_distro Fedora -L
+build=20241124
+neofetch --ascii_distro Fedora -L
 folder=fedora-fs
 if [ -d "$folder" ]; then
          first=1
@@ -34,12 +34,12 @@ if [ "$first" != 1 ];then
          echo "Decompressing Rootfs, please be patient."
          proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
     fi
+    echo ""
     echo "localhost" > $folder/etc/hostname
     echo "127.0.0.1 localhost" > $folder/etc/hosts
     echo "nameserver 8.8.8.8" > $folder/etc/resolv.conf
 bin=.fedora
 linux=fedora
-echo ""
 echo "Writing launch script"
 cat > $bin <<- EOM
 #!/data/data/com.termux/files/usr/bin/bash
@@ -99,16 +99,17 @@ EOM
      chmod -R 755 $folder
      echo "Removing image for some space"
      rm $tarball
+echo ""
+echo "" > $folder/root/.hushlogin
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
 echo 'bash .fedora' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
      clear
      echo ""
-     echo "Checking Package,.."
+     echo "Updating Package,.."
      echo ""
 echo "#!/bin/bash
-touch ~/.hushlogin
 dnf install dialog nano sudo ncurses tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
@@ -116,9 +117,9 @@ exit" > $folder/root/.bash_profile
 bash $bin
      clear
      echo ""
-     echo "You can login to Fedora with 'fedora' script next time"
+     echo "You can login to Linux with 'fedora' script next time"
      echo ""
      #rm fedora41.sh
 #
 ## Script edited by 'WaHaSa', Script revision-5.
-##
+#
