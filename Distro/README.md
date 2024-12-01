@@ -80,7 +80,7 @@ rm $PREFIX/bin/fedora ; pd remove fedora
 ```
 
 ---
-<b>In Fedora, run this command</b>
+<b>In Linux, run this command</b>
 ```
 echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ```
