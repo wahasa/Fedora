@@ -110,6 +110,7 @@ chmod +x $PREFIX/bin/$linux
      echo "Updating Package,.."
      echo ""
 echo "#!/bin/bash
+dnf update -y ; dnf upgrade -y
 dnf install dialog nano sudo ncurses tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
 rm -rf ~/.bash_profile
