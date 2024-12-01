@@ -44,6 +44,7 @@ Feature
 <b>In Termux, run this commands</b>
 > apt update
 
+- Edit Script
 ```
 apt install pulseaudio nano -y
 ```
@@ -74,7 +75,9 @@ chmod +x $PREFIX/bin/fedora
 > exit
 
 - Remove Fedora
-> rm $PREFIX/bin/fedora
+```
+rm $PREFIX/bin/fedora ; pd remove fedora
+```
 
 ---
 <b>In Fedora, run this command</b>
@@ -85,7 +88,7 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ---
 </details>
 
-<details><summary><b><code>Add Username Distro</code></b></summary></br>
+<details><summary><b><code>Add New Username</code></b></summary></br>
 
 In Linux, run this commands
 > dnf install sudo
