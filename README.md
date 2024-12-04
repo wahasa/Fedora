@@ -72,7 +72,7 @@ In Fedora, run this commands
 <details><summary><b><code>Xfce Desktop</code></b></summary></br>
 
 ```
-dnf install @xfce-desktop-environment tigervnc-server dbus -y
+dnf install @xfce-desktop-environment firefox-esr pulseaudio tigervnc-server dbus -y
 ```
 ```
 dnf install xfburn parole ristretto gst-libav -y
@@ -82,7 +82,7 @@ dnf install xfburn parole ristretto gst-libav -y
 <details><summary><b><code>Lxde Desktop</code></b></summary></br>
 
 ```
-dnf install @lxde-desktop-environment tigervnc-server dbus -y
+dnf install @lxde-desktop-environment firefox-esr pulseaudio tigervnc-server dbus -y
 ```
 ```
 mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
@@ -92,13 +92,13 @@ mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
 <details><summary><b><code>Lxqt Desktop</code></b></summary></br>
 
 ```
-dnf install @lxqt-desktop-environment tigervnc-server dbus -y
+dnf install @lxqt-desktop-environment firefox-esr pulseaudio tigervnc-server dbus -y
 ```
 </details>
 
 <details><summary><b><code>Kde- Desktop</code></b></summary></br>
 
-~~dnf install @kde-desktop-environment tigervnc-server dbus -y~~
+~~dnf install @kde-desktop-environment firefox-esr pulseaudio tigervnc-server dbus -y~~
 </details>
 
 ---
