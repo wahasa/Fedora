@@ -3,6 +3,7 @@
 
 ---
 ### Fixed Chromium on Fedora
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Chromium.jpg">
 
 * Install Chromium
 > dnf install chromium
