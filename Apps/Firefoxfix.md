@@ -3,6 +3,7 @@
 
 ---
 ### Fixed Firefox on Fedora
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Firefox.jpg">
 
 * Install Firefox
 > dnf install firefox-esr
