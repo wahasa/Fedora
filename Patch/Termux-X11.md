@@ -3,6 +3,8 @@
 
 ---
 ### Termux-x11 on Fedora
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Termux-X11.jpg">
+
 - App Termux-x11
 
 - [x] [Link Download](https://github.com/termux/termux-x11/releases)
@@ -74,6 +76,20 @@ Remove the sign (#) on the desktop you are installing now.
 ```
 chmod +x /usr/local/bin/start-x11
 ```
+
+- Edit Properties
+```
+nano ~/.termux/termux.properties
+```
+
+Example :
+> #allow-external-apps = true
+
+To
+
+> allow-external-apps = true
+
+Save : ctrl + x, click Y enter.
 
 ---
 #### Run Termux-x11
