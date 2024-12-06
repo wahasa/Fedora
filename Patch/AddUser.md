@@ -3,6 +3,7 @@
 
 ---
 ### Add Username on Fedora
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Username.jpg">
 
 In Linux, run this commands
 > dnf install sudo
