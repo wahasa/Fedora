@@ -4,7 +4,7 @@ pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
 fedora=42
-build=20241201
+build=20241208
 neofetch --ascii_distro Fedora -L
 folder=fedora-fs
 if [ -d "$folder" ]; then
