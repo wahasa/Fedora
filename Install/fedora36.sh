@@ -34,6 +34,7 @@ if [ "$first" != 1 ];then
          echo "Decompressing Rootfs, please be patient."
 	 proot --link2symlink tar -xpf ~/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
          proot --link2symlink tar -xpf ~/layer.tar -C ~/$folder/ --exclude='dev'||:
+	 rm layer.tar
     fi
     echo ""
     echo "localhost" > $folder/etc/hostname
@@ -99,7 +100,7 @@ EOM
      echo "Fixing permissions for $linux"
      chmod -R 755 $folder
      echo "Removing image for some space"
-     rm $tarball layer.tar
+     rm $tarball
 echo ""
 echo "" > $folder/root/.hushlogin
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
