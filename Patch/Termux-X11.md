@@ -33,6 +33,20 @@ chmod +x $PREFIX/bin/start-x11
 chmod +x $PREFIX/bin/stop-x11
 ```
 
+- Edit Properties
+```
+nano ~/.termux/termux.properties
+```
+
+Example :
+> #allow-external-apps = true
+
+To
+
+> allow-external-apps = true
+
+Save : ctrl + x, click Y enter.
+
 ---
 Add new session :</br>
 Swipe the screen from left to right in termux, click 'New Session'.
@@ -76,20 +90,6 @@ Remove the sign (#) on the desktop you are installing now.
 ```
 chmod +x /usr/local/bin/start-x11
 ```
-
-- Edit Properties
-```
-nano ~/.termux/termux.properties
-```
-
-Example :
-> #allow-external-apps = true
-
-To
-
-> allow-external-apps = true
-
-Save : ctrl + x, click Y enter.
 
 ---
 #### Run Termux-x11
