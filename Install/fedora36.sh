@@ -32,8 +32,8 @@ if [ "$first" != 1 ];then
          mkdir -p $folder
 	 mkdir -p $folder/binds
          echo "Decompressing Rootfs, please be patient."
-	 proot --link2symlink tar -xpf ~/${tarball} --strip-components=1 --exclude json --exclude VERSION||:
-         proot --link2symlink tar -xpf ~/layer.tar -C ~/$folder/ --exclude='dev'||:
+	 proot --link2symlink tar -xpf ~/${tarball} --strip-components=1 --exclude json --exclude VERSION ||:
+         proot --link2symlink tar -xpf ~/layer.tar -C ~/$folder/ --exclude='dev' ||:
 	 rm layer.tar
     fi
     echo ""
