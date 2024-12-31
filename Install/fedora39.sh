@@ -4,7 +4,7 @@ pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
 fedora=39
-build=20241222
+build=20241229
 neofetch --ascii_distro Fedora -L
 folder=fedora-fs
 if [ -d "$folder" ]; then
@@ -32,7 +32,7 @@ if [ "$first" != 1 ];then
          mkdir -p $folder
 	 mkdir -p $folder/binds
          echo "Decompressing Rootfs, please be patient."
-         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
+         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev' ||:
     fi
     echo ""
     echo "localhost" > $folder/etc/hostname
