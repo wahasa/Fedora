@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
-pkg install proot xz-utils neofetch pulseaudio -y
+pkg install proot neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
 fedora=36
@@ -27,7 +27,7 @@ if [ "$first" != 1 ];then
                *)
                        echo "Unknown Architecture."; exit 1 ;;
                esac
-	       wget -q --show-progress "https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/${fedora}/Container/${archurl}/images/Fedora-Container-Base-${fedora}-${build}.${archurl}.tar.xz" -O $tarball
+	       wget "https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/${fedora}/Container/${archurl}/images/Fedora-Container-Base-${fedora}-${build}.${archurl}.tar.xz" -O $tarball
 	 fi
          mkdir -p $folder
 	 mkdir -p $folder/binds
@@ -69,14 +69,12 @@ command+=" -b /proc/self/fd:/dev/fd"
 command+=" -b /proc/self/fd/0:/dev/stdin"
 command+=" -b /proc/self/fd/1:/dev/stdout"
 command+=" -b /proc/self/fd/2:/dev/stderr"
-command+=" -b /sys"
 command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
 command+=" -b $folder/root:/dev/shm"
 ## Uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
 ## Uncomment the following line to mount /sdcard directly to /
 command+=" -b /sdcard"
-command+=" -b /mnt"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
 command+=" HOME=/root"
