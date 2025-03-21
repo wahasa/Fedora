@@ -15,27 +15,13 @@ apt install termux-x11-nightly -y
 
 - Add script
 ```
-echo "termux-x11 :1" > $PREFIX/bin/start-x11 ; echo "pkill -f com.termux.x11" > $PREFIX/bin/stop-x11
+echo "termux-x11 :1" > $PREFIX/bin/x11start ; echo "pkill -f com.termux.x11" > $PREFIX/bin/x11stop
 ```
 
 - Activate script
 ```
-chmod +x $PREFIX/bin/*
+chmod +x $PREFIX/bin/x11*
 ```
-
-- Edit Properties
-```
-nano ~/.termux/termux.properties
-```
-
-Example :
-> #allow-external-apps = true
-
-To
-
-> allow-external-apps = true
-
-Save : ctrl + x, click Y enter.
 
 ---
 Add new session :</br>
@@ -47,7 +33,7 @@ Commands in Linux (session 2)
 
 - Edit script
 ```
-nano /usr/local/bin/start-x11
+nano /usr/local/bin/x11start
 ```
 
 - Add script
@@ -55,26 +41,10 @@ nano /usr/local/bin/start-x11
 #!/bin/sh
 export DISPLAY=:1
 export PULSE_SERVER=127.0.0.1
-
-# --XFCE-- #
-#startxfce4
-
-# --LXDE-- #
-#startlxde
-
-# --LXQT-- #
-#startlxqt
-
-# --KDE-- #
-#startplasma-x11
-
-# --END-- #
+startxfce4
 ```
 
 Save : ctrl + x, click Y enter.
-
-Note :</br>
-Remove the sign (#) on the desktop you are installing now.
 
 - Activate script
 ```
@@ -87,12 +57,12 @@ chmod +x /usr/local/bin/start-x11
 
 In session 1(termux), run this command
 ```
-start-x11
+x11start
 ```
 
 In session 2 (linux), run this command
 ```
-start-x11
+x11start
 ```
 
 Open Termux-x11
