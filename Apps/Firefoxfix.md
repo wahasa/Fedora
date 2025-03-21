@@ -1,15 +1,11 @@
-<p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
-
----
 ### Fixed Firefox on Fedora
 <img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Firefox.jpg">
 
 * Install Firefox
-> dnf install firefox-esr
+> dnf install firefox
 
 * Uninstall Firefox
-> dnf autoremove firefox-esr
+> dnf autoremove firefox
 
 ---
 #### Fixed firefox crash
