@@ -42,7 +42,7 @@ Exec=/usr/share/code/code --no-sandbox --unity-launch %F
 Save : ctrl + x, click Y enter.
 
 Example :
-> Exec=/usr/share/code/code --unity-launch %F
+> Exec=/usr/share/code/code %F
 
 To
 
