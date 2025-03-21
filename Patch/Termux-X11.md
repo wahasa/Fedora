@@ -77,9 +77,9 @@ In session 2 (linux), run this command
 > Click Ctrl+c, enter (2X)
 
 In session 1(termux), run this command
-> x11stop
-
 > Click Ctrl+c, enter
+
+> x11stop
 </br>
 
 ---
