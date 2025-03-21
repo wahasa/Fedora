@@ -1,7 +1,3 @@
-<p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
-
----
 ### Termux-x11 on Fedora
 <img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Termux-X11.jpg">
 
@@ -12,25 +8,19 @@
 ---
 Commands in Termux (session 1)
 
-- Install Package
+- Install pkg
 ```
 apt install termux-x11-nightly -y
 ```
 
 - Add script
 ```
-echo "termux-x11 :1" > $PREFIX/bin/start-x11
-```
-```
-echo "pkill -f com.termux.x11" > $PREFIX/bin/stop-x11
+echo "termux-x11 :1" > $PREFIX/bin/start-x11 ; echo "pkill -f com.termux.x11" > $PREFIX/bin/stop-x11
 ```
 
 - Activate script
 ```
-chmod +x $PREFIX/bin/start-x11
-```
-```
-chmod +x $PREFIX/bin/stop-x11
+chmod +x $PREFIX/bin/*
 ```
 
 - Edit Properties
