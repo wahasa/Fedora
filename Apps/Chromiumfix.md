@@ -1,7 +1,3 @@
-<p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
-
----
 ### Fixed Chromium on Fedora
 <img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Chromium.jpg">
 
@@ -24,17 +20,17 @@ nano /usr/share/applications/chromium-browser.desktop
 
 * Add script
 ```
-Exec=/usr/bin/chromium-browser --no sandbox --test-type %U
+Exec=/usr/bin/chromium-browser --no-sandbox --test-type %U
 ```
 
 Save : ctrl + x, click Y enter.
 
 Example :
-> Exec=/usr/bin/chromium --test-type %U
+> Exec=/usr/bin/chromium-browser %U
 
 To
 
-> Exec=/usr/bin/chromium --no-sandbox --test-type %U
+> Exec=/usr/bin/chromium-browser --no-sandbox --test-type %U
 
 * You can open chromium now.
 </br>
