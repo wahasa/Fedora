@@ -1,15 +1,29 @@
 ### Visual Studio Code on Fedora
 
-In Linux, run this commands
-> dnf install wget nano
+* App file
 
-Arm32 (Armv7/6/Armhf)
+- [x] [Link Download](https://code.visualstudio.com/download)
+
+Note :</br>
+X64 (X86_64/Amd64)</br>
+Arm32 (Armv7/6/Armhf)</br>
 Arm64 (Aarch64/Armv8)
-X64 (X86_64/Amd64)
-
-- [x] List File | [Click Hare >](https://code.visualstudio.com/download)
 
 ---
+In Linux, run this commands
+> dnf install nano
+
+* Copy file
+```
+cd /sdcard/Download
+```
+```
+cp <name file>.rpm ~/
+```
+```
+cd
+```
+
 * Install pkg
 ```
 dnf install ~/code*
