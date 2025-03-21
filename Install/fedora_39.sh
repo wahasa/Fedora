@@ -120,7 +120,7 @@ bash $bin
      echo ""
      echo "You can login to Linux with 'fedora' script next time"
      echo ""
-     #rm fedora39.sh
+     #rm fedora_39.sh
 #
 ## Script edited by 'WaHaSa', Script revision-5.
 #
