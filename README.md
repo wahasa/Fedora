@@ -72,7 +72,7 @@ In Fedora, run this commands
 - [x] Xfce Desktop
 
 ```
-dnf install udisks2 @xfce-desktop xfburn parole ristretto gstreamer1-plugin-openh264 pulseaudio firefox-esr tigervnc-server dbus -y
+dnf install udisks2 @xfce-desktop xfburn parole ristretto gstreamer1-plugin-openh264 pulseaudio chromium tigervnc-server dbus -y
 ```
 ```
 mv /usr/libexec/xfce-polkit /usr/libexec/xfce-polkit.bak
@@ -84,7 +84,7 @@ Feature
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
 - [x] Add New Username     | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/AddUser.md#add-username-on-fedora)
-- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Apps/Firefoxfix.md#fixed-firefox-on-fedora)
+- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Apps/Chromiumfix.md#fixed-chromium-on-fedora)
 - [x] Install Applications | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Apps#list-applications)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
