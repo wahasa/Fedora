@@ -65,19 +65,19 @@ Basic commands Fedora
 > dnf autoremove (pkg) : Delete pkg.</br>
 
 ---
-### Install Desktop Environments
+### Install Desktop Environment
 In Fedora, run this commands
 > dnf update
 
-Xfce Desktop
+- [x] Xfce Desktop
 
 ```
-dnf install @xfce-desktop-environment firefox-esr pulseaudio tigervnc-server dbus -y
+dnf install udisks2 @xfce-desktop xfburn parole ristretto gstreamer1-plugin-openh264 pulseaudio firefox-esr tigervnc-server dbus -y
 ```
 ```
-dnf install xfburn parole ristretto gst-libav -y
+mv /usr/libexec/xfce-polkit /usr/libexec/xfce-polkit.bak
 ```
-> mv /usr/libexec/xfce-polkit /usr/libexec/xfce-polkit.bak
+
 ---
 Feature
 - [x] Fixed Sound Output
@@ -90,10 +90,9 @@ Feature
 Visit problems now in : [Issues](https://github.com/wahasa/Fedora/issues)
 
 ---
-### Run Desktop Environments
+### Run Desktop Environment
 - [x] With Termux-X11  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/Termux-X11.md#termux-x11-on-fedora)
 - [x] With Rvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/RvncViewer.md#rvnc-viewer-on-fedora)
-- [x] With Bvnc Viewer | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/BvncViewer.md#bvnc-viewer-on-fedora)
 </br>
 
 ---
