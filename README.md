@@ -14,34 +14,32 @@
 Copy and paste this commands to Termux
 > apt update
 
-Install Fedora
-
-> apt install wget
 - [x] Fedora 41
 
 Rootfs : Arm64, Amd64
 ```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_41.sh ; chmod +x fedora_41.sh ; ./fedora_41.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_41.sh ; chmod +x fedora_41.sh ; ./fedora_41.sh
 ```
 
 - [x] Fedora 40
 
 Rootfs : Arm64, Amd64
 ```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_40.sh ; chmod +x fedora_40.sh ; ./fedora_40.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_40.sh ; chmod +x fedora_40.sh ; ./fedora_40.sh
 ```
 - [x] Fedora 39
 
 Rootfs : Arm64, Amd64
 ```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_39.sh ; chmod +x fedora_39.sh ; ./fedora_39.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_39.sh ; chmod +x fedora_39.sh ; ./fedora_39.sh
 ```
 - [x] Fedora 36
 
 Rootfs : Armhf, Arm64, Amd64
 ```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_36.sh ; chmod +x fedora_36.sh ; ./fedora_36.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_36.sh ; chmod +x fedora_36.sh ; ./fedora_36.sh
 ```
+
 ---
 * Login Fedora
 ```
