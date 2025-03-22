@@ -5,7 +5,7 @@
 > dnf install firefox
 
 * Uninstall Firefox
-> dnf autoremove firefox
+> dnf remove firefox
 
 ---
 #### Fixed firefox crash
