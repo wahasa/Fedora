@@ -14,32 +14,34 @@
 Copy and paste this commands to Termux
 > apt update
 
-<details><summary><b><code>Install Fedora</code></b></summary></br>
+Install Fedora
 
 > apt install wget
-- [x] Fedora 41 (Latest-release)
+- [x] Fedora 41
 
 Rootfs : Arm64, Amd64
 ```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora41.sh ; chmod +x fedora41.sh ; ./fedora41.sh
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_41.sh ; chmod +x fedora_41.sh ; ./fedora_41.sh
 ```
 
-- [x] Fedora 36 (Old-release)
+- [x] Fedora 40
+
+Rootfs : Arm64, Amd64
+```
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_40.sh ; chmod +x fedora_40.sh ; ./fedora_40.sh
+```
+- [x] Fedora 39
+
+Rootfs : Arm64, Amd64
+```
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_39.sh ; chmod +x fedora_39.sh ; ./fedora_39.sh
+```
+- [x] Fedora 36
 
 Rootfs : Armhf, Arm64, Amd64
 ```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora36.sh ; chmod +x fedora36.sh ; ./fedora36.sh
+wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedora_36.sh ; chmod +x fedora_36.sh ; ./fedora_36.sh
 ```
-- [x] Fedora 42 (Development)
-
-Rootfs : Arm64, Amd64
-```
-wget https://raw.githubusercontent.com/wahasa/Fedora/main/Install/fedoradev.sh ; chmod +x fedoradev.sh ; ./fedoradev.sh
-```
-
-- [x] List Fedora | [Click Hare >](https://github.com/wahasa/Fedora/tree/main/Install)
-</details>
-
 ---
 * Login Fedora
 ```
@@ -58,11 +60,11 @@ chmod -R 775 fedora-fs ; rm -rf fedora-fs .fedora $PREFIX/bin/fedora
 
 ---
 Basic commands Fedora
-> dnf update : Update list package.</br>
+> dnf update : Update repo package.</br>
 > dnf upgrade : Upgrade package.</br>
 > dnf search (pkg) : Search package.</br>
 > dnf install (pkg) : Install package.</br>
-> dnf autoremove (pkg) : Delete pkg.</br>
+> dnf remove (pkg) : Delete package.</br>
 
 ---
 ### Install Desktop Environment
@@ -74,7 +76,7 @@ In Fedora, run this commands
 - [x] Xfce Desktop
 
 ```
-dnf install udisks2 @xfce-desktop xfburn parole ristretto gstreamer1-plugin-openh264 pulseaudio chromium tigervnc-server dbus -y
+dnf install udisks2 @xfce-desktop xfburn parole ristretto gstreamer1-plugin-openh264 chromium tigervnc-server dbus -y
 ```
 ```
 mv /usr/libexec/xfce-polkit /usr/libexec/xfce-polkit.bak
