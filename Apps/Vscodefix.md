@@ -1,4 +1,5 @@
 ### Visual Studio Code on Fedora
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/VS-Code.jpg">
 
 * App file
 
