@@ -69,6 +69,8 @@ Basic commands Fedora
 In Fedora, run this commands
 > dnf update
 
+<img src="https://raw.githubusercontent.com/wahasa/Fedora/refs/heads/main/Patch/Xfce.jpg">
+
 - [x] Xfce Desktop
 
 ```
@@ -83,7 +85,7 @@ Feature
 - [x] Fixed Sound Output
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Add New Username     | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Patch/AddUser.md#add-username-on-fedora)
+- [x] Add New Username
 - [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Fedora/blob/main/Apps/Chromiumfix.md#fixed-chromium-on-fedora)
 - [x] Install Applications | [Click Here >](https://github.com/wahasa/Fedora/tree/main/Apps#list-applications)
 
