@@ -30,11 +30,11 @@ apt install proot-distro -y ; proot-distro install fedora
 
 ---
 Basic commands Fedora
-> dnf update : Update list package.</br>
+> dnf update : Update repo package.</br>
 > dnf upgrade : Upgrade package.</br>
 > dnf search (pkg) : Search package.</br>
 > dnf install (pkg) : Install package.</br>
-> dnf autoremove (pkg) : Delete pkg.</br>
+> dnf remove (pkg) : Delete pkg.</br>
 
 ---
 Feature
@@ -88,82 +88,10 @@ echo "export PULSE_SERVER=127.0.0.1" >> ~/.bashrc
 ---
 </details>
 
-<details><summary><b><code>Add New Username</code></b></summary></br>
-
-<b>In Linux, run this commands</b>
-> dnf install sudo
-
-- Add Username
-```
-adduser <username>
-```
-```
-passwd <username>
-```
-```
-echo "<username>    ALL=(ALL)       ALL" >> /etc/sudoers
-```
-
-</br>
-Note :</br>
-(username) : Replace with your username.
-
 ---
-- Login Username
-```
-su <username>
-```
+- [x] [Install Desktop Environment](https://github.com/wahasa/Fedora/tree/main#install-desktop-environment)
 
-- Logout Username
-```
-exit
-```
-
-- Remove Username
-```
-deluser <username>
-```
-
----
-<b>In Termux, run this commands</b>
-> apt install nano
-
-- Edit Script
-```
-nano $PREFIX/bin/fedora
-```
-</br>
-
-> proot-distro login fedora --shared-tmp
-
-To
-
-```
-proot-distro login --user <username> fedora --shared-tmp
-```
-Save : ctrl + x, click y enter.
-
-</br>
-Note :</br>
-(username) : Replace with your username.
-
----
-- Login Fedora
-> fedora
-
-- Logout Fedora
-> exit
-
-- Remove Fedora
-```
-rm $PREFIX/bin/fedora ; pd remove fedora
-```
-</details>
-
----
-- [x] [Install Desktop Environments](https://github.com/wahasa/Fedora/tree/main#install-desktop-environments)
-
-- [x] [Run Desktop Environments](https://github.com/wahasa/Fedora/tree/main#run-desktop-environments)
+- [x] [Run Desktop Environment](https://github.com/wahasa/Fedora/tree/main#run-desktop-environment)
 </br>
 
 ---
